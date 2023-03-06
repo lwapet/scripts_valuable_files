@@ -1,0 +1,296 @@
+Script started on 2022-04-08 15:59:40+02:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="105" LINES="23"]
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ exitutgedit install_benchmarking_app_on_samsung_galaxy_S8.sh [A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ bash install_battery_drainer_app.sh [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ echo $(date +'%d%h%y_%H_%M') ; bas[C[Cinstall_benchmarking_app.sh[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [22Padb devices
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [22Padb devices
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [22Padb devices
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh
+08Apr22_16_15
+bash: install_benchmarking_app.sh: No such file or directory
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ cd s[Kscripts_valuable_files/
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ cd scripts_valuable_files/[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ echo $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh
+08Apr22_16_15
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadbd is already running as root
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h/system/bin/sh: no closing quote
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hSuccess
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Streamed Install
+Success
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h-----starting the app
+Starting: Intent { cmp=com.opportunistask.scheduling.benchmarking_app_to_test_big_cores/.MainActivity }
+----- app_pid =  22573 
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ echo $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ cd scripts_valuable_files/[K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ echo $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ [C[6Pxit
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cutgedit install_benchmarking_app_on_samsung_galaxy_S8.sh [A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash instal[C[19P_battery_drainer_app[C[C[C[C
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadbd is already running as root
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h/system/bin/sh: no closing quote
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hSuccess
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Streamed Install
+Success
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h-----starting the app
+Starting: Intent { cmp=com.opportunistask.scheduling.benchmarking_app_to_test_big_cores/.MainActivity }
+----- app_pid =  22748 
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh [A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ echo $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh
+08Apr22_16_32
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadbd is already running as root
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h/system/bin/sh: no closing quote
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hSuccess
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Streamed Install
+Success
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h-----starting the app
+Starting: Intent { cmp=com.opportunistask.scheduling.benchmarking_app_to_test_big_cores/.MainActivity }
+----- app_pid =  23549 
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ echo $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh
+08Apr22_16_45
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadbd is already running as root
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h/system/bin/sh: no closing quote
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hSuccess
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Streamed Install
+Success
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h-----starting the app
+Starting: Intent { cmp=com.opportunistask.scheduling.benchmarking_app_to_test_big_cores/.MainActivity }
+----- app_pid =  23726 
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ echo $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash instal[27Pl_battery_drainer_app.sh 
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadbd is already running as root
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h/system/bin/sh: no closing quote
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hSuccess
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Streamed Install
+Success
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h-----starting the app
+Starting: Intent { cmp=com.opportunistask.scheduling.benchmarking_app_to_test_big_cores/.MainActivity }
+----- app_pid =  24299 
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh 
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadb: unable to connect for root: no devices/emulators found
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadb.exe: no devices/emulators found
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h- waiting for device -
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Push Install
+adb: error: failed to get feature set: no devices/emulators found
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadb.exe: no devices/emulators found
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadb.exe: no devices/emulators found
+^[[A^C
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh [A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadb device s
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hList of devices attached
+
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ adb devices
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hList of devices attached
+
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ adb devices
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hList of devices attached
+
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ adb devices
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hList of devices attached
+
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ adb devices
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hList of devices attached
+
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ adb devices
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hList of devices attached
+
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ adb devices
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hList of devices attached
+
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ 
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ adb devices
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hList of devices attached
+
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ adb devices
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hList of devices attached
+
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ adb devices
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hList of devices attached
+0B051JECB15861  device
+
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ adb devices[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh [A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ echo $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh
+08Apr22_17_01
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadbd is already running as root
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h/system/bin/sh: no closing quote
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hSuccess
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Streamed Install
+Success
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h-----starting the app
+Starting: Intent { cmp=com.opportunistask.scheduling.benchmarking_app_to_test_big_cores/.MainActivity }
+----- app_pid =  25655 
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ echo $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ adb devices[K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ echo $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ adb devices[K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh 
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadb: unable to connect for root: no devices/emulators found
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadb.exe: no devices/emulators found
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h- waiting for device -
+Success
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Streamed Install
+adb: failed to install C:\Users\lavoi\opportunist_task_on_android\git_repositories\app_to_drain_battery.a
+pk: Failure [INSTALL_PARSE_FAILED_NO_CERTIFICATES: Failed collecting certificates for /data/app/vmdl10544
+30903.tmp/base.apk: Failed to collect certificates from /data/app/vmdl1054430903.tmp/base.apk using APK S
+ignature Scheme v2: SHA-256 digest of contents did not verify]
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h-----starting the app
+Starting: Intent { cmp=com.opportunistask.scheduling.benchmarking_app_to_test_big_cores/.MainActivity }
+Error type 3
+Error: Activity class {com.opportunistask.scheduling.benchmarking_app_to_test_big_cores/com.opportunistas
+k.scheduling.benchmarking_app_to_test_big_cores.MainActivity} does not exist.
+----- app_pid =   
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh 
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadbd is already running as root
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h/system/bin/sh: no closing quote
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hFailure [DELETE_FAILED_INTERNAL_ERROR]
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Streamed Install
+Success
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h-----starting the app
+Starting: Intent { cmp=com.opportunistask.scheduling.benchmarking_app_to_test_big_cores/.MainActivity }
+----- app_pid =  25990 
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ b
+ash install_battery_drainer_app.sh [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ b
+ash install_battery_drainer_app.sh [A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ e
+cho $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh[A[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ b
+[16Pash install_battery_drainer_app.sh 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ e
+cho $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh
+13Apr22_11_53
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadb: unable to connect for root: no devices/emulato
+rs found
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadb.exe: no devices/emulators found
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h- waiting for device -
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Push Install
+adb: error: failed to get feature set: no devices/e
+mulators found
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadb.exe: no devices/emulators found
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadb.exe: no devices/emulators found
+^C
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ ^C
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ echo $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash ins[22Ptall_battery_drainer_app.sh 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh
+13Apr22_12_01
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadbd is already running as root
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h/system/bin/sh: no closing quote
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hSuccess
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Streamed Install
+Success
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h-----starting the app
+Starting: Intent { cmp=com.opportunistask.schedulin
+g.benchmarking_app_to_test_big_cores/.MainActivity 
+}
+----- app_pid =  31574 
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportun
+ist_task_on_android/scripts_valuable_files[00m$ [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportun
+ist_task_on_android/scripts_valuable_files[00m$ [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportun
+ist_task_on_android/scripts_valuable_files[00m$ [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportun
+ist_task_on_android/scripts_valuable_files[00m$ [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportun
+ist_task_on_android/scripts_valuable_files[00m$ [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportun
+ist_task_on_android/scripts_valuable_files[00m$ [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportun
+ist_task_on_android/scripts_valuable_files[00m$ [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportun
+ist_task_on_android/scripts_valuable_files[00m$ [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportun
+ist_task_on_android/scripts_valuable_files[00m$ [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportun
+ist_task_on_android/scripts_valuable_files[00m$ [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportun
+ist_task_on_android/scripts_valuable_files[00m$ [K[A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportun
+ist_task_on_android/scripts_valuable_files[00m$ echo $(date +'%d%h%y_%H_%M') ; bash install_bench
+marking_app.sh
+13Apr22_12_18
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadbd is already running as root
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h/system/bin/sh: no closing quote
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hSuccess
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Streamed Install
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h^C
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ ^C
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ ^C
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ echo $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh[A[C[C[C[C[C[C[C[C[C[13Pbash install_battery_drainer_app.sh 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadbd is already running as root
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h/system/bin/sh: no closing quote
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hFailure [DELETE_FAILED_INTERNAL_ERROR]
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Streamed Install
+Success
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h-----starting the app
+Starting: Intent { cmp=com.opportunistask.scheduling.benchmarking_app_to
+_test_big_cores/.MainActivity }
+----- app_pid =  31802 
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh 
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadbd is already running as root
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h/system/bin/sh: no closing quote
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hSuccess
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Streamed Install
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h^C
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ ^C
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ bash install_battery_drainer_app.sh [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh
+13Apr22_12_21
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadbd is already running as root
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h/system/bin/sh: no closing quote
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hFailure [DELETE_FAILED_INTERNAL_ERROR]
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Streamed Install
+Success
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h-----starting the app
+Starting: Intent { cmp=com.opportunistask.scheduling.benchmarking_app_to
+_test_big_cores/.MainActivity }
+----- app_pid =  32424 
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ echo $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh
+13Apr22_12_36
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadbd is already running as root
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h/system/bin/sh: no closing quote
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hSuccess
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Streamed Install
+Success
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h-----starting the app
+Starting: Intent { cmp=com.opportunistask.scheduling.benchmarking_app_to
+_test_big_cores/.MainActivity }
+----- app_pid =  32610 
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ echo $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh[A[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh
+13Apr22_13_04
+'/mnt/c/Program Files/Android/platform-tools_r33.0.1-windows/platform-tools/adb.exe'
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadb: unable to connect for root: no devices/emulators found
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadb.exe: no devices/emulators found
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h- waiting for device -
+---- before installing!!
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hPerforming Push Install[25l
+adb: error: failed to get feature set: no devices/emulators found       [29;66H[?25h
+------ after installation
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadb.exe: no devices/emulators found
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25hadb.exe: no devices/emulators found
+^C
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android/scripts_valuable_files[00m$ echo $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh[A[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit
+exit
+
+Script done on 2022-04-13 13:25:26+02:00 [COMMAND_EXIT_CODE="130"]

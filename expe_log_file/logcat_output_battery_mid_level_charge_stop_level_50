@@ -1,0 +1,653 @@
+Script started on 2022-04-14 12:24:34+02:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="211" LINES="13"]
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ echo $(date +'%d%h%y_%H_%M') ; adb shell "su -c taskset -p 80 8791"446"072"08 7092"5436"214"adb shell[Kbash install_battery_drainer_app_for_non_rooted.sh [3@enchmarking_app_on_samsung_galaxy_S8[C[C[C[Cadb devices[K[Ksbash install_battery_drainer_app.sh [18@enchmarking_app_on_samsung_galaxy_S8[C[C[C[Cadb devices [K[24@bash install_battery_drainer_app.sh[Cadb devices[Kbash install_battery_drainer_app.sh s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ch[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18@sh install_benchmarking_app_on_samsung_galaxy_S8[C[C[C[C[1@gedit[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pbash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadb devices [K[42@bash install_benchmarking_app_on_samsung_galaxy_S8.sh[C[1@gedit[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pbash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pcd scripts_valuable_files/bash install_benchmarking_app_on_samsung_galaxy_S8.sh [1@gedit[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pbash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadb devices [K[42@bash install_benchmarking_app_on_samsung_galaxy_S8.sh[C[1@gedit[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pbash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Phs install_battery_drainer_app[C[C[C[Cs[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ch[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadb devices[Kbash install_battery_drainer_app.sh [24Padb devices[C[42@bash install_benchmarking_app_on_samsung_galaxy_S8.sh[C[18Pattery_drainer_app[C[C[C[Cadb devices[K[Ksbash install_benchmarking_app_on_samsung_galaxy_S8.sh [3Pattery_drainer_app_for_non_rooted[C[C[C[Cadb shell[Kecho $(date +'%d%h%y_%H_%M') ; adb shell "su -c taskset -p 08 5214"436"7092"80 8072"446"791"[Kadb logact[K[K[Kcat -grep be[K[K[K[K[K[K[Kc
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ adb logcat |[K[K[K[K[K[K[K[K[K[K[K[K(reverse-i-search)`': [Kb': adb logcat -ce': bash install_benchmarking_app_on_samsung_galaxy_S8.sh [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@n[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8@failed reverse-i-search)`bencm[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Preverse-i-search)`benc': gedit[C[C[C[C[C[C[C[C[C[1@h[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@a[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@k[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8@failed reverse-i-search)`benchmark_[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@h[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@e[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@d[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Preverse-i-search)`benchmark': bash[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6@failed reverse-i-search)`[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C^C
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ adb logcat -cecho $(date +'%d%h%y_%H_%M') ; adb shell "su -c taskset -p 80 8791"446"072"08 7092"5436"214"adb shell[Kbash install_battery_drainer_app_for_non_rooted.sh [3@enchmarking_app_on_samsung_galaxy_S8[C[C[C[Cadb devices[K[Ksbash install_battery_drainer_app.sh [18@enchmarking_app_on_samsung_galaxy_S8[C[C[C[Cadb devices [K[24@bash install_battery_drainer_app.sh[Cadb devices[Kbash install_battery_drainer_app.sh s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ch[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18@sh install_benchmarking_app_on_samsung_galaxy_S8[C[C[C[C[1@gedit[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pbash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadb devices [K[42@bash install_benchmarking_app_on_samsung_galaxy_S8.sh[C[1@gedit[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pbash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pcd scripts_valuable_files/..[K[2Pls cd scripts_valuable_files/..[Kadb logcat | grep "Benchmark_thread"-c [K| grep "Benchmark_thread"-c [K| grep "Benchmark_thread"
+04-14 15:28:23.970 15933 15933 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 is created
+04-14 15:30:23.824 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread :------- current temperature = 31000.0
+04-14 15:30:23.824 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 is running
+04-14 15:30:23.824 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 0 workload
+04-14 15:30:23.824 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 15:30:23.825 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 15:30:23.825 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 15:30:23.825 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 15:30:23.826 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119998 seconds to remove cable
+04-14 15:30:23.826 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119998 seconds to remove cable
+04-14 15:30:23.827 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119997 seconds to remove cable
+04-14 15:30:23.827 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119997 seconds to remove cable
+04-14 15:30:23.828 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119996 seconds to remove cable
+04-14 15:30:23.828 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119996 seconds to remove cable
+04-14 15:30:24.430 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 10000 workload
+04-14 15:30:26.165 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 20000 workload
+04-14 15:30:33.824 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 110000 seconds to remove cable
+04-14 15:30:38.691 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 30000 workload
+04-14 15:30:43.755 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 40000 workload
+04-14 15:30:43.824 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 100000 seconds to remove cable
+04-14 15:30:43.824 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 100000 seconds to remove cable
+04-14 15:30:43.825 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99999 seconds to remove cable
+04-14 15:30:43.825 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99999 seconds to remove cable
+04-14 15:30:43.826 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99998 seconds to remove cable
+04-14 15:30:43.826 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99998 seconds to remove cable
+04-14 15:30:43.827 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99997 seconds to remove cable
+04-14 15:30:43.827 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99997 seconds to remove cable
+04-14 15:30:43.828 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99996 seconds to remove cable
+04-14 15:30:48.948 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 50000 workload
+04-14 15:30:53.824 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 90000 seconds to remove cable
+04-14 15:30:53.825 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89999 seconds to remove cable
+04-14 15:30:53.825 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89999 seconds to remove cable
+04-14 15:30:53.826 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89998 seconds to remove cable
+04-14 15:30:53.827 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89997 seconds to remove cable
+04-14 15:30:53.827 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89997 seconds to remove cable
+04-14 15:30:53.828 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89996 seconds to remove cable
+04-14 15:30:55.295 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 60000 workload
+04-14 15:31:02.799 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 70000 workload
+04-14 15:31:03.824 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 80000 seconds to remove cable
+04-14 15:31:03.825 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79999 seconds to remove cable
+04-14 15:31:03.826 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79998 seconds to remove cable
+04-14 15:31:03.827 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79997 seconds to remove cable
+04-14 15:31:03.828 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79996 seconds to remove cable
+04-14 15:31:11.433 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 80000 workload
+04-14 15:31:13.824 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 70000 seconds to remove cable
+04-14 15:31:13.825 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69999 seconds to remove cable
+04-14 15:31:13.826 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69998 seconds to remove cable
+04-14 15:31:13.827 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69997 seconds to remove cable
+04-14 15:31:13.828 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69996 seconds to remove cable
+04-14 15:31:21.229 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 90000 workload
+04-14 15:31:23.824 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 60000 seconds to remove cable
+04-14 15:31:23.825 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59999 seconds to remove cable
+04-14 15:31:23.826 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59998 seconds to remove cable
+04-14 15:31:23.827 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59997 seconds to remove cable
+04-14 15:31:23.828 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59996 seconds to remove cable
+04-14 15:31:32.189 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 100000 workload
+04-14 15:31:33.824 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 50000 seconds to remove cable
+04-14 15:31:33.825 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 49999 seconds to remove cable
+04-14 15:31:33.826 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 49998 seconds to remove cable
+04-14 15:31:33.828 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 49996 seconds to remove cable
+04-14 15:31:43.824 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 40000 seconds to remove cable
+04-14 15:31:43.826 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 39998 seconds to remove cable
+04-14 15:31:43.827 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 39997 seconds to remove cable
+04-14 15:31:43.828 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 39996 seconds to remove cable
+04-14 15:31:44.283 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 110000 workload
+04-14 15:31:53.824 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 30000 seconds to remove cable
+04-14 15:31:53.826 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 29998 seconds to remove cable
+04-14 15:31:53.827 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 29997 seconds to remove cable
+04-14 15:31:53.828 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 29996 seconds to remove cable
+04-14 15:32:03.826 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 19999 seconds to remove cable
+04-14 15:32:04.192 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 120000 workload
+04-14 15:32:23.824 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 0 seconds to remove cable
+04-14 15:32:23.831 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter we suppose thread have been removed USB cable, we restart counting time
+04-14 15:33:12.328 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 130000 workload
+04-14 15:34:25.888 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 140000 workload
+04-14 15:35:44.868 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 150000 workload
+04-14 15:37:09.274 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 160000 workload
+04-14 15:38:39.015 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 170000 workload
+04-14 15:40:14.246 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 180000 workload
+04-14 15:41:54.974 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 190000 workload
+04-14 15:42:23.872 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : PRINTING RESULTS
+04-14 15:42:24.136 15933 16057 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : output :  Thread: 0 - Duration: 600003 seconds; 
+04-14 15:42:24.136 15933 16057 V [01;31m[KBenchmark_thread[m[K:  - Real workload: 2.1683156246013712E11 - Integer reached: 192776; - Number of reset = 0;  
+04-14 15:42:24.136 15933 16057 V [01;31m[KBenchmark_thread[m[K:  Battery stats: 0 mAH 
+04-14 15:42:24.136 15933 16057 V [01;31m[KBenchmark_thread[m[K:  Computed Drain:  Null
+04-14 15:42:24.136 15933 16057 V [01;31m[KBenchmark_thread[m[K:  Start: 50 % - End : 50 % 
+04-14 15:44:03.844 16201 16201 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 is created
+04-14 15:44:08.977 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread :------- current temperature = 30000.0
+04-14 15:44:08.977 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 is running
+04-14 15:44:08.977 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 0 workload
+04-14 15:44:08.977 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 15:44:08.977 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 15:44:08.978 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 15:44:08.979 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 15:44:08.979 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119998 seconds to remove cable
+04-14 15:44:08.979 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119998 seconds to remove cable
+04-14 15:44:08.980 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119997 seconds to remove cable
+04-14 15:44:08.980 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119997 seconds to remove cable
+04-14 15:44:08.981 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119996 seconds to remove cable
+04-14 15:44:08.981 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119996 seconds to remove cable
+04-14 15:44:09.580 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 10000 workload
+04-14 15:44:11.313 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 20000 workload
+04-14 15:44:14.201 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 30000 workload
+04-14 15:44:18.244 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 40000 workload
+04-14 15:44:18.977 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 110000 seconds to remove cable
+04-14 15:44:18.977 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 110000 seconds to remove cable
+04-14 15:44:18.978 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109999 seconds to remove cable
+04-14 15:44:18.978 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109999 seconds to remove cable
+04-14 15:44:18.979 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109998 seconds to remove cable
+04-14 15:44:18.979 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109998 seconds to remove cable
+04-14 15:44:18.980 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109997 seconds to remove cable
+04-14 15:44:18.981 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109997 seconds to remove cable
+04-14 15:44:18.981 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109996 seconds to remove cable
+04-14 15:44:23.439 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 50000 workload
+^[[A^C
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ adb logcat | grep "Benchmark_thread"-c[K| grep "Benchmark_thread"-c[K
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ adb logcat -c| grep "Benchmark_thread"
+04-14 15:44:38.977 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 90000 seconds to remove cable
+04-14 15:44:38.980 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89997 seconds to remove cable
+04-14 15:44:48.979 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79998 seconds to remove cable
+04-14 15:44:49.716 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 60000 workload
+04-14 15:44:58.978 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69999 seconds to remove cable
+04-14 15:45:08.977 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 60000 seconds to remove cable
+04-14 15:45:08.981 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59996 seconds to remove cable
+04-14 15:45:18.979 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 49998 seconds to remove cable
+04-14 15:45:25.111 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 70000 workload
+04-14 15:45:28.978 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 39999 seconds to remove cable
+04-14 15:45:38.977 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 30000 seconds to remove cable
+04-14 15:45:38.981 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 29996 seconds to remove cable
+04-14 15:45:48.979 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 19998 seconds to remove cable
+04-14 15:45:58.978 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 9999 seconds to remove cable
+04-14 15:46:05.944 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 80000 workload
+04-14 15:46:08.978 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for -1 seconds to remove cable
+04-14 15:46:08.978 16201 16234 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter we suppose thread have been removed USB cable, we restart counting time
+04-14 15:46:42.299 16350 16350 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 is created
+04-14 15:46:46.743 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread :------- current temperature = 30000.0
+04-14 15:46:46.743 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 is running
+04-14 15:46:46.743 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 0 workload
+04-14 15:46:46.743 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 15:46:46.743 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 15:46:46.744 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 15:46:46.744 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 15:46:46.745 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119998 seconds to remove cable
+04-14 15:46:46.745 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119998 seconds to remove cable
+04-14 15:46:46.746 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119997 seconds to remove cable
+04-14 15:46:46.747 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119997 seconds to remove cable
+04-14 15:46:46.747 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119996 seconds to remove cable
+04-14 15:46:46.747 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119996 seconds to remove cable
+04-14 15:46:49.552 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 10000 workload
+04-14 15:46:56.744 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 110000 seconds to remove cable
+04-14 15:46:56.745 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109998 seconds to remove cable
+04-14 15:46:57.766 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 20000 workload
+04-14 15:47:06.744 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99999 seconds to remove cable
+04-14 15:47:06.746 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99997 seconds to remove cable
+04-14 15:47:06.747 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99996 seconds to remove cable
+04-14 15:47:11.435 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 30000 workload
+04-14 15:47:16.744 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 90000 seconds to remove cable
+04-14 15:47:16.746 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89997 seconds to remove cable
+04-14 15:47:26.743 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 80000 seconds to remove cable
+04-14 15:47:26.746 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79997 seconds to remove cable
+04-14 15:47:30.523 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 40000 workload
+04-14 15:47:36.744 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69999 seconds to remove cable
+04-14 15:47:36.747 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69996 seconds to remove cable
+04-14 15:47:46.743 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 60000 seconds to remove cable
+04-14 15:47:46.746 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59997 seconds to remove cable
+04-14 15:47:55.049 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 50000 workload
+04-14 15:47:56.743 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 50000 seconds to remove cable
+04-14 15:47:56.746 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 49997 seconds to remove cable
+04-14 15:48:06.745 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 39998 seconds to remove cable
+04-14 15:48:16.745 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 29998 seconds to remove cable
+04-14 15:48:25.016 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 60000 workload
+04-14 15:48:26.746 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 19997 seconds to remove cable
+04-14 15:48:36.745 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 9999 seconds to remove cable
+04-14 15:48:46.744 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for -1 seconds to remove cable
+04-14 15:48:46.745 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter we suppose thread have been removed USB cable, we restart counting time
+04-14 15:49:00.450 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 70000 workload
+04-14 15:49:41.287 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 80000 workload
+04-14 15:50:27.556 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 90000 workload
+04-14 15:51:19.253 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 100000 workload
+04-14 15:52:16.437 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 110000 workload
+04-14 15:53:19.085 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 120000 workload
+04-14 15:54:27.187 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 130000 workload
+04-14 15:55:40.711 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 140000 workload
+04-14 15:56:59.751 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 150000 workload
+04-14 15:58:24.108 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 160000 workload
+04-14 15:58:46.780 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : PRINTING RESULTS
+04-14 15:58:47.080 16350 16384 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : output :  Thread: 0 - Duration: 600001 seconds; 
+04-14 15:58:47.080 16350 16384 V [01;31m[KBenchmark_thread[m[K:  - Real workload: 1.519741993666904E11 - Integer reached: 162581; - Number of reset = 0;  
+04-14 15:58:47.080 16350 16384 V [01;31m[KBenchmark_thread[m[K:  Battery stats: 0 mAH 
+04-14 15:58:47.080 16350 16384 V [01;31m[KBenchmark_thread[m[K:  Computed Drain:  Null
+04-14 15:58:47.080 16350 16384 V [01;31m[KBenchmark_thread[m[K:  Start: 50 % - End : 50 % 
+04-14 16:00:52.121 16518 16518 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 is created
+04-14 16:00:58.894 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread :------- current temperature = 30000.0
+04-14 16:00:58.894 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 is running
+04-14 16:00:58.894 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 0 workload
+04-14 16:00:58.894 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 16:00:58.894 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 16:00:58.895 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 16:00:58.895 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 16:00:58.896 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119998 seconds to remove cable
+04-14 16:00:58.896 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119998 seconds to remove cable
+04-14 16:00:58.897 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119997 seconds to remove cable
+04-14 16:00:58.897 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119997 seconds to remove cable
+04-14 16:00:58.898 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119996 seconds to remove cable
+04-14 16:00:58.899 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119996 seconds to remove cable
+04-14 16:00:59.510 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 10000 workload
+04-14 16:01:01.249 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 20000 workload
+04-14 16:01:04.146 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 30000 workload
+04-14 16:01:08.202 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 40000 workload
+04-14 16:01:08.894 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 110000 seconds to remove cable
+04-14 16:01:08.894 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 110000 seconds to remove cable
+04-14 16:01:08.895 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109999 seconds to remove cable
+04-14 16:01:08.895 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109999 seconds to remove cable
+04-14 16:01:08.896 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109998 seconds to remove cable
+04-14 16:01:08.896 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109998 seconds to remove cable
+04-14 16:01:08.897 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109997 seconds to remove cable
+04-14 16:01:08.897 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109997 seconds to remove cable
+04-14 16:01:08.898 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109996 seconds to remove cable
+04-14 16:01:08.898 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109996 seconds to remove cable
+04-14 16:01:13.413 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 50000 workload
+04-14 16:01:18.894 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 100000 seconds to remove cable
+04-14 16:01:18.895 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99999 seconds to remove cable
+04-14 16:01:18.896 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99998 seconds to remove cable
+04-14 16:01:18.896 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99998 seconds to remove cable
+04-14 16:01:18.897 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99997 seconds to remove cable
+04-14 16:01:18.898 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99996 seconds to remove cable
+04-14 16:01:18.898 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99996 seconds to remove cable
+04-14 16:01:19.784 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 60000 workload
+04-14 16:01:27.320 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 70000 workload
+04-14 16:01:28.894 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 90000 seconds to remove cable
+04-14 16:01:28.895 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89999 seconds to remove cable
+04-14 16:01:28.896 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89998 seconds to remove cable
+04-14 16:01:28.897 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89997 seconds to remove cable
+04-14 16:01:28.898 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89996 seconds to remove cable
+04-14 16:01:35.991 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 80000 workload
+04-14 16:01:38.894 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 80000 seconds to remove cable
+04-14 16:01:38.895 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79999 seconds to remove cable
+04-14 16:01:38.896 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79998 seconds to remove cable
+04-14 16:01:38.897 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79997 seconds to remove cable
+04-14 16:01:38.898 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79996 seconds to remove cable
+^[[A04-14 16:01:48.898 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69996 seconds to remove cable
+04-14 16:01:54.077 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 90000 workload
+04-14 16:01:58.896 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59998 seconds to remove cable
+04-14 16:02:08.894 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 50000 seconds to remove cable
+04-14 16:02:18.895 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 39999 seconds to remove cable
+04-14 16:02:28.894 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 30000 seconds to remove cable
+04-14 16:02:38.896 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 19998 seconds to remove cable
+04-14 16:02:45.822 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 100000 workload
+04-14 16:02:48.894 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 10000 seconds to remove cable
+04-14 16:02:58.897 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for -3 seconds to remove cable
+04-14 16:02:58.897 16518 16552 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter we suppose thread have been removed USB cable, we restart counting time
+04-14 16:03:47.269 16662 16662 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 is created
+04-14 16:04:03.299 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread :------- current temperature = 30000.0
+04-14 16:04:03.299 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 is running
+04-14 16:04:03.299 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 0 workload
+04-14 16:04:03.299 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 16:04:03.299 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 16:04:03.300 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 16:04:03.300 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 16:04:03.300 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 16:04:03.301 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 16:04:03.301 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119998 seconds to remove cable
+04-14 16:04:03.301 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119998 seconds to remove cable
+04-14 16:04:03.302 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119997 seconds to remove cable
+04-14 16:04:03.303 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119997 seconds to remove cable
+04-14 16:04:03.303 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119996 seconds to remove cable
+04-14 16:04:03.303 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119996 seconds to remove cable
+04-14 16:04:03.905 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 10000 workload
+04-14 16:04:05.632 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 20000 workload
+04-14 16:04:08.510 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 30000 workload
+04-14 16:04:12.540 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 40000 workload
+04-14 16:04:13.299 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 110000 seconds to remove cable
+04-14 16:04:13.299 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 110000 seconds to remove cable
+04-14 16:04:13.300 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109999 seconds to remove cable
+04-14 16:04:13.300 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109999 seconds to remove cable
+04-14 16:04:13.301 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109998 seconds to remove cable
+04-14 16:04:13.301 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109998 seconds to remove cable
+04-14 16:04:13.302 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109997 seconds to remove cable
+04-14 16:04:13.302 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109997 seconds to remove cable
+04-14 16:04:13.303 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109996 seconds to remove cable
+04-14 16:04:23.300 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99999 seconds to remove cable
+04-14 16:04:23.303 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99996 seconds to remove cable
+04-14 16:04:33.300 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89999 seconds to remove cable
+04-14 16:04:33.726 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 50000 workload
+04-14 16:04:43.300 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 80000 seconds to remove cable
+04-14 16:04:43.303 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79996 seconds to remove cable
+04-14 16:04:53.301 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69998 seconds to remove cable
+04-14 16:05:03.299 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 60000 seconds to remove cable
+04-14 16:05:03.303 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59996 seconds to remove cable
+04-14 16:05:03.695 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 60000 workload
+04-14 16:05:13.301 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 49998 seconds to remove cable
+04-14 16:05:23.301 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 39998 seconds to remove cable
+04-14 16:05:33.301 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 29998 seconds to remove cable
+04-14 16:05:39.160 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 70000 workload
+04-14 16:05:43.302 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 19997 seconds to remove cable
+04-14 16:05:53.302 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 9998 seconds to remove cable
+04-14 16:06:03.302 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for -3 seconds to remove cable
+04-14 16:06:03.302 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter we suppose thread have been removed USB cable, we restart counting time
+04-14 16:06:20.114 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 80000 workload
+04-14 16:07:06.397 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 90000 workload
+04-14 16:07:58.167 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 100000 workload
+04-14 16:08:55.372 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 110000 workload
+04-14 16:09:58.015 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 120000 workload
+04-14 16:11:05.995 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 130000 workload
+04-14 16:12:19.477 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 140000 workload
+04-14 16:13:38.380 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 150000 workload
+04-14 16:15:02.719 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 160000 workload
+04-14 16:16:03.345 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : PRINTING RESULTS
+04-14 16:16:03.612 16662 16701 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : output :  Thread: 0 - Duration: 600007 seconds; 
+04-14 16:16:03.612 16662 16701 V [01;31m[KBenchmark_thread[m[K:  - Real workload: 1.603625342757335E11 - Integer reached: 166821; - Number of reset = 0;  
+04-14 16:16:03.612 16662 16701 V [01;31m[KBenchmark_thread[m[K:  Battery stats: 0 mAH 
+04-14 16:16:03.612 16662 16701 V [01;31m[KBenchmark_thread[m[K:  Computed Drain:  Null
+04-14 16:16:03.612 16662 16701 V [01;31m[KBenchmark_thread[m[K:  Start: 50 % - End : 50 % 
+04-14 16:21:24.675 16843 16843 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 is created
+04-14 16:21:29.243 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread :------- current temperature = 30000.0
+04-14 16:21:29.243 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 is running
+04-14 16:21:29.243 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 0 workload
+04-14 16:21:29.243 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 16:21:29.243 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 16:21:29.244 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 16:21:29.245 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 16:21:29.245 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119998 seconds to remove cable
+04-14 16:21:29.246 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119998 seconds to remove cable
+04-14 16:21:29.246 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119997 seconds to remove cable
+04-14 16:21:29.246 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119997 seconds to remove cable
+04-14 16:21:29.247 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119996 seconds to remove cable
+04-14 16:21:29.248 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119996 seconds to remove cable
+04-14 16:21:29.844 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 10000 workload
+04-14 16:21:31.576 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 20000 workload
+04-14 16:21:34.459 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 30000 workload
+04-14 16:21:38.494 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 40000 workload
+04-14 16:21:39.243 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 110000 seconds to remove cable
+04-14 16:21:39.243 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 110000 seconds to remove cable
+04-14 16:21:39.244 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109999 seconds to remove cable
+04-14 16:21:39.245 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109998 seconds to remove cable
+04-14 16:21:39.245 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109998 seconds to remove cable
+04-14 16:21:39.246 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109997 seconds to remove cable
+04-14 16:21:39.246 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109997 seconds to remove cable
+04-14 16:21:39.247 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109996 seconds to remove cable
+04-14 16:21:39.247 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109996 seconds to remove cable
+04-14 16:21:43.682 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 50000 workload
+04-14 16:21:49.243 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 100000 seconds to remove cable
+04-14 16:21:49.244 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99999 seconds to remove cable
+04-14 16:21:49.245 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99998 seconds to remove cable
+04-14 16:21:49.245 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99998 seconds to remove cable
+04-14 16:21:49.246 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99997 seconds to remove cable
+04-14 16:21:49.247 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99996 seconds to remove cable
+04-14 16:21:50.026 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 60000 workload
+04-14 16:21:57.529 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 70000 workload
+04-14 16:21:59.243 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 90000 seconds to remove cable
+04-14 16:21:59.244 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89999 seconds to remove cable
+04-14 16:21:59.245 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89998 seconds to remove cable
+04-14 16:21:59.246 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89997 seconds to remove cable
+04-14 16:21:59.247 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89996 seconds to remove cable
+04-14 16:22:06.164 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 80000 workload
+04-14 16:22:09.243 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 80000 seconds to remove cable
+04-14 16:22:09.244 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79999 seconds to remove cable
+04-14 16:22:09.245 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79998 seconds to remove cable
+04-14 16:22:09.246 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79997 seconds to remove cable
+04-14 16:22:09.247 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79996 seconds to remove cable
+04-14 16:22:15.953 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 90000 workload
+04-14 16:22:19.244 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69999 seconds to remove cable
+04-14 16:22:19.245 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69998 seconds to remove cable
+04-14 16:22:19.246 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69997 seconds to remove cable
+04-14 16:22:19.247 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69996 seconds to remove cable
+04-14 16:22:26.899 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 100000 workload
+04-14 16:22:29.243 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 60000 seconds to remove cable
+04-14 16:22:29.244 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59999 seconds to remove cable
+04-14 16:22:29.245 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59998 seconds to remove cable
+04-14 16:22:29.247 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59996 seconds to remove cable
+04-14 16:22:38.986 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 110000 workload
+04-14 16:22:39.243 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 50000 seconds to remove cable
+04-14 16:22:39.245 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 49998 seconds to remove cable
+04-14 16:22:39.246 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 49997 seconds to remove cable
+04-14 16:22:39.247 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 49996 seconds to remove cable
+04-14 16:22:49.243 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 40000 seconds to remove cable
+04-14 16:22:49.244 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 39999 seconds to remove cable
+04-14 16:22:49.246 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 39997 seconds to remove cable
+04-14 16:22:49.247 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 39996 seconds to remove cable
+04-14 16:22:52.250 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 120000 workload
+04-14 16:22:59.244 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 29999 seconds to remove cable
+04-14 16:22:59.245 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 29998 seconds to remove cable
+04-14 16:22:59.247 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 29996 seconds to remove cable
+04-14 16:23:06.663 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 130000 workload
+04-14 16:23:09.244 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 20000 seconds to remove cable
+04-14 16:23:09.245 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 19998 seconds to remove cable
+04-14 16:23:09.247 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 19996 seconds to remove cable
+04-14 16:23:19.243 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 10000 seconds to remove cable
+04-14 16:23:19.244 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 9999 seconds to remove cable
+04-14 16:23:19.246 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 9997 seconds to remove cable
+04-14 16:23:22.264 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 140000 workload
+04-14 16:23:29.243 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 0 seconds to remove cable
+04-14 16:23:29.244 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for -1 seconds to remove cable
+04-14 16:23:29.244 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter we suppose thread have been removed USB cable, we restart counting time
+04-14 16:23:38.974 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 150000 workload
+04-14 16:23:56.817 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 160000 workload
+04-14 16:24:15.871 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 170000 workload
+04-14 16:24:35.958 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 180000 workload
+04-14 16:24:57.356 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 190000 workload
+04-14 16:25:19.727 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 200000 workload
+04-14 16:25:43.429 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 210000 workload
+04-14 16:26:08.039 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 220000 workload
+04-14 16:26:33.964 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 230000 workload
+04-14 16:27:00.992 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 240000 workload
+04-14 16:27:29.113 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 250000 workload
+04-14 16:27:58.537 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 260000 workload
+04-14 16:28:28.901 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 270000 workload
+04-14 16:29:00.795 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 280000 workload
+04-14 16:29:33.600 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 290000 workload
+04-14 16:30:07.412 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 300000 workload
+04-14 16:30:42.376 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 310000 workload
+04-14 16:31:18.619 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 320000 workload
+04-14 16:31:56.296 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 330000 workload
+04-14 16:32:34.685 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 340000 workload
+04-14 16:33:14.220 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 350000 workload
+04-14 16:33:29.270 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : PRINTING RESULTS
+04-14 16:33:29.537 16843 16877 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : output :  Thread: 0 - Duration: 600004 seconds; 
+04-14 16:33:29.537 16843 16877 V [01;31m[KBenchmark_thread[m[K:  - Real workload: 7.677975610708025E11 - Integer reached: 353677; - Number of reset = 0;  
+04-14 16:33:29.537 16843 16877 V [01;31m[KBenchmark_thread[m[K:  Battery stats: 0 mAH 
+04-14 16:33:29.537 16843 16877 V [01;31m[KBenchmark_thread[m[K:  Computed Drain:  Null
+04-14 16:33:29.537 16843 16877 V [01;31m[KBenchmark_thread[m[K:  Start: 50 % - End : 49 % 
+04-14 16:34:39.657 17038 17038 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 is created
+04-14 16:34:55.889 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread :------- current temperature = 32000.0
+04-14 16:34:55.889 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 is running
+04-14 16:34:55.889 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 0 workload
+04-14 16:34:55.889 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 16:34:55.889 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 16:34:55.890 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 16:34:55.890 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 16:34:55.891 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119998 seconds to remove cable
+04-14 16:34:55.891 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119998 seconds to remove cable
+04-14 16:34:55.892 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119997 seconds to remove cable
+04-14 16:34:55.892 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119997 seconds to remove cable
+04-14 16:34:55.893 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119996 seconds to remove cable
+04-14 16:34:55.893 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119996 seconds to remove cable
+04-14 16:34:56.490 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 10000 workload
+04-14 16:34:58.232 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 20000 workload
+04-14 16:35:01.130 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 30000 workload
+04-14 16:35:05.187 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 40000 workload
+04-14 16:35:05.889 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 110000 seconds to remove cable
+04-14 16:35:05.889 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 110000 seconds to remove cable
+04-14 16:35:05.890 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109999 seconds to remove cable
+04-14 16:35:05.890 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109999 seconds to remove cable
+04-14 16:35:05.891 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109998 seconds to remove cable
+04-14 16:35:05.891 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109998 seconds to remove cable
+04-14 16:35:05.892 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109997 seconds to remove cable
+04-14 16:35:05.892 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109997 seconds to remove cable
+04-14 16:35:05.893 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109996 seconds to remove cable
+04-14 16:35:05.893 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109996 seconds to remove cable
+04-14 16:35:10.402 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 50000 workload
+04-14 16:35:15.889 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 100000 seconds to remove cable
+04-14 16:35:15.890 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99999 seconds to remove cable
+04-14 16:35:15.891 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99999 seconds to remove cable
+04-14 16:35:15.891 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99998 seconds to remove cable
+04-14 16:35:15.892 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99997 seconds to remove cable
+04-14 16:35:15.893 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99996 seconds to remove cable
+04-14 16:35:15.893 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99996 seconds to remove cable
+04-14 16:35:16.778 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 60000 workload
+04-14 16:35:24.324 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 70000 workload
+04-14 16:35:25.889 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 90000 seconds to remove cable
+04-14 16:35:25.890 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89999 seconds to remove cable
+04-14 16:35:25.891 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89998 seconds to remove cable
+04-14 16:35:25.892 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89997 seconds to remove cable
+04-14 16:35:25.893 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89996 seconds to remove cable
+04-14 16:35:33.008 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 80000 workload
+04-14 16:35:35.889 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 80000 seconds to remove cable
+04-14 16:35:35.890 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79999 seconds to remove cable
+04-14 16:35:35.891 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79998 seconds to remove cable
+04-14 16:35:35.892 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79997 seconds to remove cable
+04-14 16:35:35.893 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79996 seconds to remove cable
+04-14 16:35:42.853 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 90000 workload
+04-14 16:35:45.889 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 70000 seconds to remove cable
+04-14 16:35:45.890 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69999 seconds to remove cable
+04-14 16:35:45.891 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69998 seconds to remove cable
+04-14 16:35:45.892 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69997 seconds to remove cable
+04-14 16:35:45.893 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69996 seconds to remove cable
+04-14 16:35:53.869 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 100000 workload
+04-14 16:35:55.889 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 60000 seconds to remove cable
+04-14 16:35:55.890 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59999 seconds to remove cable
+04-14 16:35:55.891 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59998 seconds to remove cable
+04-14 16:35:55.892 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59997 seconds to remove cable
+04-14 16:36:05.889 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 50000 seconds to remove cable
+04-14 16:36:05.890 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 49999 seconds to remove cable
+04-14 16:36:05.891 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 49998 seconds to remove cable
+04-14 16:36:05.893 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 49996 seconds to remove cable
+04-14 16:36:06.031 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 110000 workload
+04-14 16:36:15.889 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 40000 seconds to remove cable
+04-14 16:36:15.890 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 39999 seconds to remove cable
+04-14 16:36:15.892 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 39997 seconds to remove cable
+04-14 16:36:15.893 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 39996 seconds to remove cable
+04-14 16:36:19.359 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 120000 workload
+04-14 16:36:25.890 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 29999 seconds to remove cable
+04-14 16:36:25.891 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 29998 seconds to remove cable
+04-14 16:36:25.893 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 29996 seconds to remove cable
+04-14 16:36:33.849 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 130000 workload
+04-14 16:36:35.890 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 19999 seconds to remove cable
+04-14 16:36:35.891 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 19998 seconds to remove cable
+04-14 16:36:35.893 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 19996 seconds to remove cable
+04-14 16:36:45.889 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 10000 seconds to remove cable
+04-14 16:36:45.890 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 9999 seconds to remove cable
+04-14 16:36:45.892 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 9997 seconds to remove cable
+04-14 16:36:49.518 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 140000 workload
+04-14 16:36:55.890 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for -1 seconds to remove cable
+04-14 16:36:55.890 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter we suppose thread have been removed USB cable, we restart counting time
+04-14 16:37:06.306 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 150000 workload
+04-14 16:37:24.225 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 160000 workload
+04-14 16:37:43.364 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 170000 workload
+04-14 16:38:03.546 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 180000 workload
+04-14 16:38:25.052 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 190000 workload
+04-14 16:38:47.529 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 200000 workload
+04-14 16:39:11.346 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 210000 workload
+04-14 16:39:36.086 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 220000 workload
+04-14 16:40:02.144 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 230000 workload
+04-14 16:40:29.305 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 240000 workload
+04-14 16:40:57.564 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 250000 workload
+04-14 16:41:27.133 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 260000 workload
+04-14 16:41:57.673 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 270000 workload
+04-14 16:42:29.711 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 280000 workload
+04-14 16:43:02.685 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 290000 workload
+04-14 16:43:36.674 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 300000 workload
+04-14 16:44:11.823 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 310000 workload
+04-14 16:44:48.242 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 320000 workload
+04-14 16:45:26.123 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 330000 workload
+04-14 16:46:04.731 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 340000 workload
+04-14 16:46:44.489 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 350000 workload
+04-14 16:46:55.913 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : PRINTING RESULTS
+04-14 16:46:56.216 17038 17074 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : output :  Thread: 0 - Duration: 600001 seconds; 
+04-14 16:46:56.216 17038 17074 V [01;31m[KBenchmark_thread[m[K:  - Real workload: 7.639391643834481E11 - Integer reached: 352822; - Number of reset = 0;  
+04-14 16:46:56.216 17038 17074 V [01;31m[KBenchmark_thread[m[K:  Battery stats: 0 mAH 
+04-14 16:46:56.216 17038 17074 V [01;31m[KBenchmark_thread[m[K:  Computed Drain:  Null
+04-14 16:46:56.216 17038 17074 V [01;31m[KBenchmark_thread[m[K:  Start: 49 % - End : 49 % 
+^[[A^C
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ adb logcat | grep "Benchmark_thread"-c[K| grep "Benchmark_thread"-c[K
+[6n[m]0;C:\Program Files\Android\platform-tools_r33.0.1-windows\platform-tools\adb.exe[?25h]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ adb logcat -c| grep "Benchmark_thread"
+04-14 16:47:29.475 17242 17242 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 is created
+04-14 16:47:41.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread :------- current temperature = 34000.0
+04-14 16:47:41.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 is running
+04-14 16:47:41.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 0 workload
+04-14 16:47:41.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 16:47:41.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 16:47:41.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 16:47:41.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 16:47:41.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 120000 seconds to remove cable
+04-14 16:47:41.012 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 16:47:41.012 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119999 seconds to remove cable
+04-14 16:47:41.013 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119998 seconds to remove cable
+04-14 16:47:41.013 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119998 seconds to remove cable
+04-14 16:47:41.014 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119997 seconds to remove cable
+04-14 16:47:41.014 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119997 seconds to remove cable
+04-14 16:47:41.015 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119996 seconds to remove cable
+04-14 16:47:41.016 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 119996 seconds to remove cable
+04-14 16:47:41.606 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 10000 workload
+04-14 16:47:43.339 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 20000 workload
+04-14 16:47:46.227 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 30000 workload
+04-14 16:47:50.266 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 40000 workload
+04-14 16:47:51.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 110000 seconds to remove cable
+04-14 16:47:51.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 110000 seconds to remove cable
+04-14 16:47:51.012 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109999 seconds to remove cable
+04-14 16:47:51.012 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109999 seconds to remove cable
+04-14 16:47:51.013 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109998 seconds to remove cable
+04-14 16:47:51.013 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109998 seconds to remove cable
+04-14 16:47:51.014 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109997 seconds to remove cable
+04-14 16:47:51.014 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109997 seconds to remove cable
+04-14 16:47:51.015 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 109996 seconds to remove cable
+04-14 16:47:55.458 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 50000 workload
+04-14 16:48:01.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 100000 seconds to remove cable
+04-14 16:48:01.012 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99999 seconds to remove cable
+04-14 16:48:01.012 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99999 seconds to remove cable
+04-14 16:48:01.013 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99998 seconds to remove cable
+04-14 16:48:01.014 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99997 seconds to remove cable
+04-14 16:48:01.014 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99997 seconds to remove cable
+04-14 16:48:01.015 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 99996 seconds to remove cable
+04-14 16:48:01.803 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 60000 workload
+04-14 16:48:09.309 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 70000 workload
+04-14 16:48:11.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 90000 seconds to remove cable
+04-14 16:48:11.012 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89999 seconds to remove cable
+04-14 16:48:11.013 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89998 seconds to remove cable
+04-14 16:48:11.014 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89997 seconds to remove cable
+04-14 16:48:11.015 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 89996 seconds to remove cable
+04-14 16:48:17.949 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 80000 workload
+04-14 16:48:21.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 80000 seconds to remove cable
+04-14 16:48:21.012 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79999 seconds to remove cable
+04-14 16:48:21.013 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79998 seconds to remove cable
+04-14 16:48:21.014 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79997 seconds to remove cable
+04-14 16:48:21.015 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 79996 seconds to remove cable
+04-14 16:48:27.746 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 90000 workload
+04-14 16:48:31.012 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 70000 seconds to remove cable
+04-14 16:48:31.013 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69998 seconds to remove cable
+04-14 16:48:31.014 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69997 seconds to remove cable
+04-14 16:48:31.015 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 69996 seconds to remove cable
+04-14 16:48:38.707 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 100000 workload
+04-14 16:48:41.012 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59999 seconds to remove cable
+04-14 16:48:41.013 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59998 seconds to remove cable
+04-14 16:48:41.014 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59997 seconds to remove cable
+04-14 16:48:41.015 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 59996 seconds to remove cable
+04-14 16:48:50.804 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 110000 workload
+04-14 16:48:51.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 50000 seconds to remove cable
+04-14 16:48:51.012 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 49999 seconds to remove cable
+04-14 16:48:51.013 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 49998 seconds to remove cable
+04-14 16:48:51.014 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 49997 seconds to remove cable
+04-14 16:49:01.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 40000 seconds to remove cable
+04-14 16:49:01.012 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 39999 seconds to remove cable
+04-14 16:49:01.013 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 39998 seconds to remove cable
+04-14 16:49:01.015 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 39996 seconds to remove cable
+04-14 16:49:04.071 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 120000 workload
+04-14 16:49:11.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 30000 seconds to remove cable
+04-14 16:49:11.012 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 29999 seconds to remove cable
+04-14 16:49:11.014 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 29997 seconds to remove cable
+04-14 16:49:11.015 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 29996 seconds to remove cable
+04-14 16:49:18.491 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 130000 workload
+04-14 16:49:21.012 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 20000 seconds to remove cable
+04-14 16:49:21.013 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 19998 seconds to remove cable
+04-14 16:49:21.015 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 19996 seconds to remove cable
+04-14 16:49:31.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 10000 seconds to remove cable
+04-14 16:49:31.013 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 9998 seconds to remove cable
+04-14 16:49:31.014 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 9997 seconds to remove cable
+04-14 16:49:34.091 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 140000 workload
+04-14 16:49:41.011 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for 0 seconds to remove cable
+04-14 16:49:41.013 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter waiting for -2 seconds to remove cable
+04-14 16:49:41.013 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : usb cable counter we suppose thread have been removed USB cable, we restart counting time
+04-14 16:49:50.794 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 150000 workload
+04-14 16:50:08.625 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 160000 workload
+04-14 16:50:27.681 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 170000 workload
+04-14 16:50:47.781 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 180000 workload
+04-14 16:51:09.182 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 190000 workload
+04-14 16:51:31.563 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 200000 workload
+04-14 16:51:55.268 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 210000 workload
+04-14 16:52:19.881 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 220000 workload
+04-14 16:52:45.803 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 230000 workload
+04-14 16:53:12.848 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 240000 workload
+04-14 16:53:40.990 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 250000 workload
+04-14 16:54:10.411 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 260000 workload
+04-14 16:54:40.781 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 270000 workload
+04-14 16:55:12.661 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 280000 workload
+04-14 16:55:45.479 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 290000 workload
+04-14 16:56:19.320 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 300000 workload
+04-14 16:56:55.703 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 310000 workload
+04-14 16:57:33.462 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 320000 workload
+04-14 16:58:12.712 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 330000 workload
+04-14 16:58:52.696 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 340000 workload
+04-14 16:59:33.884 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread 0 reached 350000 workload
+04-14 16:59:41.027 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : PRINTING RESULTS
+04-14 16:59:41.325 17242 17279 V [01;31m[KBenchmark_thread[m[K: The benchmarking thread : output :  Thread: 0 - Duration: 600001 seconds; 
+04-14 16:59:41.325 17242 17279 V [01;31m[KBenchmark_thread[m[K:  - Real workload: 7.590348731301346E11 - Integer reached: 351732; - Number of reset = 0;  
+04-14 16:59:41.325 17242 17279 V [01;31m[KBenchmark_thread[m[K:  Battery stats: 0 mAH 
+04-14 16:59:41.325 17242 17279 V [01;31m[KBenchmark_thread[m[K:  Computed Drain:  Null
+04-14 16:59:41.325 17242 17279 V [01;31m[KBenchmark_thread[m[K:  Start: 49 % - End : 49 % 
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [K]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ exit
+Script done on 2022-04-15 03:12:59+02:00 [COMMAND_EXIT_CODE="0"]

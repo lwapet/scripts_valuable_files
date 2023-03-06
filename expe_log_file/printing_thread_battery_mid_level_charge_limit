@@ -1,0 +1,6 @@
+Script started on 2022-04-08 15:58:41+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="11"]
+]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ exitcho $(date +'%d%h%y_%H_%M'); adb shell "ps -T -o psr,tid,pcpu 18782" [A]0;patrick@DESKTOP-D49H2V3: /mnt/c/Users/lavoi/opportunist_task_on_android[01;32mpatrick@DESKTOP-D49H2V3[00m:[01;34m/mnt/c/Users/lavoi/opportunist_task_on_android[00m$ [Cxit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+exit
+
+Script done on 2022-04-08 15:58:47+02:00 [COMMAND_EXIT_CODE="0"]

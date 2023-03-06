@@ -1,0 +1,96 @@
+comme compte rendu d'aujourd'hui, j'ai terminé la lecture du papier technique je krls. 
+Voici ce qui en ressort: si l'on souhaite connaître en détail l'impact d'une variable cible Xj sur l'outcom Y.
+
+1  - On peut comparer le marginal effect du kernel ridge de la variable cible,  avec le coefficient du linéar model de la même variable cible 
+     S'il y'a une grosse différence on peut soupçonner une dépendance non linéaire entre la variable cible et l'outcom.
+     
+2 -  On peut calculer les dérivées partielle de la variable cible en chaque data point du modèle. On obtient comme un autre feature;  notons le Xj_d
+     C'est avec ce feature, qu'on peut faire des analyses poussées suivantes, après l'avoir regressé en fonction des autres features.
+     a) Afficher ce nouveau feature Xj_d en fonction de Xj , et s'il y'a une correllation linéaire non horizontale par exemple, alors 
+      on peut soupçonner une non linéarité entre Y et Xj car une linéarité entre Y et Xj impliquerai une corrélation horizontale (dY/dXj = Xj_d = cte dans ce dernier cas).        
+       
+     b) on peut aussi afficher ce feature Xj_d en fonction des autres features du modèles. 
+     ceci permet de voir comment le feature cible Xj impacte l'output Y en fonction de l'évolution des autres features. 
+     
+     Par exemple : si notre feature cible Xj c'est la fréquence d'un big core et qu'un autre feature Xj1 c'est la fréquence du little core,
+     en affichant Xj_d (dérivée de la fréquence du big core en chaque data point)
+      en fonction de Xj1 on peut par exemple voir que pour les valeurs basses de fréquence du little core, lorsque la fréquence du little core évolue, 
+       la fréquence du big core a impact positif élevé sur l'efficacité énergétique. 
+      
+     c) en observant les coefficients de la regression linéaire entre Xj_d et les autres features, 
+      on peut soupçonner une interaction entre Xj et un autre feature Xj1 si jamais
+       la correlation linéaire est forte entre les deux (c'est à dire le coefficient de Xj1 dans la regression de Xj est positivement ou négativement très significatif)
+
+
+3 - Après ces observations, ce qu'il précaunisent de faire c'est d'enrichir le modèles linéaire par des polynomes, en elevant le dégré de la variable non linéaire ou en la multipliant par la variable avec laquelle elle a une forte interaction, dumoins on peut le faire pour avoir un résultat similaire à celui du kernel ridge.
+ ce qui peut dire que la non linéarité implique la dépendance polynomiale de dégrés supérieur à un et l'interactivité implique une multiplication des feautures dans la formule finale. 
+
+
+Bonjour Vlad, toutes mes excuses pour hier car je n'ai pas pu envoyer le compte rendu. 
+D'ailleurs, le voici en ligne 
+[1] compte rendu du 15 juin 2022 https://gitlab.liris.cnrs.fr/plwapet/scripts_and_relevant_files/-/blob/main/compte_rendu_15_06_2022
+
+Aussi je devais te demander pourquoi est ce tu as dit hier que cette phrase te semblait intéressante. Dumoins qu'est ce que tu as cru comprendre? 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

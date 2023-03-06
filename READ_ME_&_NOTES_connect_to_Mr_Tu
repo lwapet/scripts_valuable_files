@@ -1,0 +1,600 @@
+to connect to Mr Tu vpn 
+1 - comment to line  "data-ciphers AES-128-GCM" in his code
+2 - sudo openvpn --config wapet.ovpn --auth-retry interact
+3 - ssh -i openssh_key_Tu_Dinh_Ngoc.key sepia@192.168.0.5
+
+to clean my local directory
+rm android/lineage/out/*
+
+I regularly if needed update local files with remotes (from android/lineage)
+
+-----> Updating  binaries generated on Mr Tu servers
+>rm -rfv out/target/product/bramble/*
+>mkdir -p out/target/product/bramble
+
+cp out/target/product/bramble/lineage-18.1-20210421-UNOFFICIAL-bramble.zip out/target/product/bramble/lineage-18.1-20210421-UNOFFICIAL-bramble.zip_$(date +'%d%h%y_%H_%M')
+cp out/target/product/bramble/boot.img out/target/product/bramble/boot.img_$(date +'%d%h%y_%H_%M')
+cp out/target/product/bramble/boot.img out/target/product/bramble/boot.img_$(date +'%d%h%y_%H_%M')
+>scp -i ../../openssh_key_Tu_Dinh_Ngoc.key sepia@192.168.0.5:/home/sepia/android/lineage/out/target/product/bramble/boot.img  /home/lavoisier/svn_workspace/wapet/security/opportunistic_tasks_android/android/lineage/out/target/product/bramble
+>scp -i ../../openssh_key_Tu_Dinh_Ngoc.key sepia@192.168.0.5:/home/sepia/android/lineage/out/target/product/bramble/lineage-18.1-20210421-UNOFFICIAL-bramble.zip  /home/lavoisier/svn_workspace/wapet/security/opportunistic_tasks_android/android/lineage/out/target/product/bramble/lineage-18.1-20210421-UNOFFICIAL-bramble.zip
+
+
+-----> Preparing the Phone (https://wiki.lineageos.org/devices/bramble/install)
+> MANUALLY Activate developper mode (hit 7 times build options) ------ REPEAT THIS STEP AT EACH BUILD___No_longer_necessary__
+> MANUALLY Activate USB Debugging  ----------------------------------- REPEAT THIS STEP AT EACH BUILD___
+> MANUALLY Activate OEM Unlock (system->developper options)
+> MANUALLY Connect USB  
+> adb reboot bootloader / MANUALLY down+power   ++ fastboot devices (for verification)
+> fastboot flashing unlock
+> MANUALLY/OPTIONNALY Reboot----------------------------------------- REPEAT THIS STEP AT EACH BUILD
+
+>>> update binaries
+>>> adb reboot bootloader/ MANUALLY down+power ---------------------- REPEAT THIS STEP AT EACH BUILD
+> fastboot flash boot android/lineage/out/target/product/bramble/boot.img--- THIS STEP AT EACH BUILD, fastboot reboot.
+> MANUALLY Select Recovery Mode ------------------------------------- REPEAT THIS STEP AT EACH BUILD___
+> MANUALLY  -> Factory Reset-> Format Data -> Return to Main--------- REPEAT THIS STEP AT EACH BUILD___
+> MANUALLY -> Apply update->Apply from ADB--------------------------- REPEAT THIS STEP AT EACH BUILD___
+> adb sideload out/target/product/bramble/linea****bramble.zip------- REPEAT THIS STEP AT EACH BUILD___
+> MANUALLY -> Back arrow-> reboot the system Now -------------------- REPEAT THIS STEP AT EACH BUILD___
+
+
+
+CAN OBTAIN DMESG FROM PHONE
+> adb root 
+> adb shell cat /dev/dmsg > kernel-log.txt
+> adb shell dmesg -T > logs/kernel-log.txt_$(date +'%d%h%y_%H_%M')_testing_benchmark_app_1_times
+> adb logcat > logs/logcat-log.txt_$(date +'%d%h%y_%H_%M')_testing_benchmark_app_1_times
+
+
+
+CONNECTING TO VISUAL STUDIO 
+> extension: Remote SSH
+> add new host   fill with sepia@192.168.0.5 ssh -i /home/lavoisier/svn_workspace/wapet/security/opportunistic_tasks_android/openssh_key_Tu_Dinh_Ngoc.key sepia@192.168.0.5
+
+> MANUALLY F1 +  Remote-SSH: Connect to Host 
+> MANUALLY Open in file side, the remote window
+> MANUALLY Modify and recompile
+    source build/envsetup.sh 
+    croot
+    time brunch bramble
+
+
+WARNING-MAKING .android ACCESSIBLE BY ANDROID STUDIO and ADB
+after exporting the ~/.android folder on another disk 
+(media/lavoisier/ab6e6186-d536-4b99-8c57-d6a489e52a7d/home/lavoisier/from_103GB_old_partition/android),
+ I need everytime to link it to the expected one:
+ln -s /media/lavoisier/ab6e6186-d536-4b99-8c57-d6a489e52a7d/home/lavoisier/from_103GB_old_partition/android ~/.android
+
+
+WORKING ON LIRIS SERVER
+to do first
+git fetch https://github.com/lwapet/android_kernel scheduler_modifications:scheduler_modifications
+> adb shell dmesg -T > logs/kernel-log.txt_$(date +'%d%h%y_%H_%M')_testing_cgroups
+
+
+Note : this link probably resolved the signature resolution failed problem. https://forum.xda-developers.com/t/build-props-tweaks.4257725/
+I had to add some lines in the /sys/build.prop file. 
+
+
+grep utility
+grep --color -rnE '\<(android.database.ContentOb.*|android.net.Uri|android.database.Cursor|getColumnIndex|query|android.provider.*|android.content.ContentResolver)\>' 
+
+To do, rewrite all configs usages in kernel by writing CONFIG, before. 
+
+///  to create cgroups directories
+# mount -t tmpfs cgroup_root /sys/fs/cgroup
+	# mkdir /sys/fs/cgroup/cpu
+	# mount -t cgroup -ocpu none /sys/fs/cgroup/cpu
+	# cd /sys/fs/cgroup/cpu
+
+	# mkdir multimedia --- best_effort_fl	# create "multimedia" group of tasks
+	# mkdir browser		# create "browser" group of tasks
+
+	# #Configure the multimedia group to receive twice the CPU bandwidth
+	# #that of browser group
+
+	# echo 2048 > multimedia/cpu.shares
+	# echo 1024 > browser/cpu.shares
+
+	# firefox &	# Launch firefox and move it to "browser" group
+	# echo <firefox_pid> > browser/tasks
+
+	# #Launch gmplayer (or your favourite movie player)
+	# echo <movie_player_pid> > multimedia/tasks
+	
+	
+	
+	#ifdef CONFIG_BEST_EFFORT_FL_TASK_CGROUP_HANDLING
+        root_task_group.group_id = DEFAULT_TASK_GROUP_ID; 
+        printk ("[CONFIG_BEST_EFFORT_FL_TASK_CGROUP_HANDLING] initializing root_task_group_id to %d and testing kmalloc", root_task_group.group_id );
+
+        name_buf = kmalloc(NAME_MAX + 1, GFP_KERNEL);
+        if (!name_buf){
+                printk("[CONFIG_BEST_EFFORT_FL_TASK_CGROUP_HANDLING] allocation was not good");
+        }else{
+                printk("[CONFIG_BEST_EFFORT_FL_TASK_CGROUP_HANDLING] allocation was good");
+                kfree(name_buf); 
+        }
+#endif 
+
+
+
+#ifdef CONFIG_BEST_EFFORT_FL_TASK_CGROUP_HANDLING
+        printk("[CONFIG_FL_TASK_TRACING_SHEDULER] initialising the root_task_group  in function %s after if(alloc_size)", __FUNCTION__); 
+
+        printk ("[CONFIG_BEST_EFFORT_FL_TASK_CGROUP_HANDLING] in function initializing root_task_group_id to %d and testing kmalloc", root_task_group.group_id );
+#endif 
+
+	
+	
+	#if defined(CONFIG_FAIR_GROUP_SCHED) || defined(CONFIG_RT_GROUP_SCHED)
+	struct task_group *tg = task_group(p);
+	try to print tg->id = BEST_EFFORT_FL_GROUP_ID;
+	#endif
+	also try to print p->se.cfs_rq
+	
+add a line in cpu_cgroup_attach to capture the callback 
+
+add line in function sched_change_group and set_task_rq
+
+test before the sched task group is updated by the css one. 
+
+test after the sched task group is updated by the css one. 
+
+
+test before  the cfs_rq of the se is updated in the scheduler. 
+	
+test after  the cfs_rq of the se is updated in the scheduler. 
+	
+	
+	
+	
+	
+	
+	
+	Modification 1 cpu_cgroup_attach
+	Modification 2 adding task_group_id
+	Modification 3 sched_change_group
+	Modification 4 set_task_rq in sched.h
+	
+	Modification 5 cpu_sched_status in sched.h
+	Modifiction 6 enums in shed.h
+	Modification 7 __schedule function
+	Modification 8 function is_any_other_bigcore_busy
+	Modification 9 config 	CONFIG_BEST_EFFORT_FL_TASK_SETTING_CPU_STATES
+
+
+	
+	
+	tracé le 0 et les best efforts, 
+	
+	         SCHED_STATUS_UNDEF=0, OK---------------------------------------------------
+         SCHED_STATUS_BUSY=1, OK------------------------------------------------------------
+         SCHED_STATUS_BEST_EFFORT=2, To see (last implem)
+         SCHED_STATUS_IDLE=3,  OK
+         SCHED_STATUS_BEST_EFFORT_RUNNING=4, OK
+         SCHED_STATUS_BEST_EFFORT_IDLE=5,   Problem --- not only best effort is on the queue
+
+	
+	
+	to do :
+	
+	pareil pour at_least_one_sibling_cpu_is_busy
+	
+	static inline bool funcion get_number_of_busy_sibling_cpu(int current_cpu){
+		int i, ret=0;
+		if (current_cpu >= 0 && current_cpu <= 5){
+			for(i=3; i<8; i++) {
+				if (i == me) continue;
+				if (cpu_sched_status[i] == SCHED_STATUS_BUSY || cpu_sched_status[i] == SCHED_STATUS_UNDEF){	ret++;}
+			}
+		}else if (current_cpu == 6 ) {
+			if (cpu_sched_status[7] == SCHED_STATUS_BUSY || cpu_sched_status[7] == SCHED_STATUS_UNDEF){	ret++;}
+		}else if ( current_cpu == 7) {
+			if (cpu_sched_status[6] == SCHED_STATUS_BUSY || cpu_sched_status[6] == SCHED_STATUS_UNDEF){	ret++;}
+		}
+		return ret;
+	}
+	
+	static inline bool funcion at_least_one_sibling_cpu_is_busy(){
+		int i;
+		if (i >= 0 && i <= 5){
+			for(i=3; i<8; i++) {
+				if (i == me) continue;
+				if (cpu_sched_status[i] == SCHED_STATUS_BUSY || cpu_sched_status[i] == SCHED_STATUS_UNDEF){	return true;}
+			}
+		}else if (i == 6 ) {
+			if (cpu_sched_status[7] == SCHED_STATUS_BUSY || cpu_sched_status[7] == SCHED_STATUS_UNDEF){	return true;}
+		}else if ( i == 7) {
+			if (cpu_sched_status[6] == SCHED_STATUS_BUSY || cpu_sched_status[6] == SCHED_STATUS_UNDEF){	return true;}
+		}
+		return false;
+	}
+	
+	
+	
+	
+	
+	printk("[CONFIG_BEST_EFFORT_FL_TASK_SCHEDULING] in function %s, picking the next task to be scheduled", __FUNCTION__); 
+	
+	
+	if(se){
+		if (entity_is_task(se)) {
+			struct task_struct *p = task_of(se);
+			if (task_group(p)->group_id == BEST_EFFORT_FL_GROUP_ID) {
+				struct sched_entity *second = __pick_next_entity(se);
+				if (!second) { // second is null 
+						//(the first se obtained was the last task)
+						// and it is a best effort task 
+					int my_cpu_id = smp_processor_id();
+					if (at_least_one_sibling_cpu_is_busy(my_cpu_id){
+												
+					
+					/* config cache misses
+					if (total_misses() < misses_threshold){
+						printk("[CONFIG_BEST_EFFORT_FL_TASK_SCHEDULING] work conserving context best effort task is scheduled\n");
+					*/					
+						printk("[CONFIG_BEST_EFFORT_FL_TASK_SCHEDULING] best effort task is scheduled\n");
+					/* config cache misses
+					}else{
+						printk("[CONFIG_BEST_EFFORT_FL_TASK_SCHEDULING] non work conserving context best effort task is scheduled\n");
+						return NULL
+					}
+					*/
+					}
+				} else { // second is not null ( it is probably a normal task 
+					 // even if it is a best effort, we run it)
+					se = second ; 
+				}
+			
+			}
+		} else {
+			// error entity is not a task 
+			printk("[CONFIG_BEST_EFFORT_FL_TASK_SCHEDULING] the entity is not a task\n");
+		}
+	}
+	
+	
+	
+	if (se && se->my_q && se->my_q->tg && se->my_q->tg->group_id == LAZY_GROUP_ID) {
+		struct sched_entity *second = __pick_next_entity(se);
+		// trace_printk("[DEBUG] picked lazy group \n");
+		if (!second) {
+			int my_cpu_id = smp_processor_id();
++			// trace_printk("[DEBUG] No second\n");
++
++			// we are about to sched lazy
++			// do non work conserving
++			// if (lazy_on_all_core || my_cpu_id > 3) {
++			if (my_cpu_id > 3) {
++				// we only need to check our sibliings
++				//if (idle_corun ? (!everyone_is_waiting_for_me(my_cpu_id)) : is_any_other_bigcore_busy(my_cpu_id)) {   ### ### ### ### ### testing if other core is in running state
++				int busy_cpu_num = is_any_other_bigcore_busy(my_cpu_id);
++#ifdef CONFIG_MZHU_PMU_COUNTER
++				u64 y = total_misses();                                                                                 ### ### ### ### ### counting total misses 
++#ifdef CONFIG_MZHU_DEBUG
++				trace_printk("cycles %llu misses %llu\n",x, y);
++#endif
++#ifdef CONFIG_MZHU_DEBUG
++				trace_printk("freeness %llu\n",x);
++#endif
++#endif
++				if (busy_cpu_num
++#ifdef CONFIG_MZHU_PMU_COUNTER
++					   && (y < misses_threshold)
++#endif
++				) {
++				// if (my_cpu_id > 3 ? is_any_other_bigcore_busy(my_cpu_id) : is_any_other_littlecore_busy(my_cpu_id)) {
++#ifdef CONFIG_MZHU_DEBUG
++					trace_printk("[DEBUG] Lazy task is scheduled\n");
++#endif
++				} else {
++					// non-work-conserving
++//#ifdef CONFIG_MZHU_DEBUG
++					trace_printk("[DEBUG] Non-work-conserving return NULL\n");
+ //#endif
++					return NULL;
++				}
++			}
++		} else {
++			se = second;
++		}
++	}
++#endif
+	
+	
+	
+	
+	
+	
+	
+	expe file kernel-log.txt_06Sep21_18_47_testing_cgroups
+	
+	commands to analyse log file
+	cat logs/kernel-log.txt_08Sep21_11_59_testing_cgroups | grep "Scheduling first candidate task " | wc -l
+	add command -w to dmseg to maintain long ouputs
+	
+	------------ last results 
+patrick@patrick-HP-ProBook-650-G2:~/trying_to_retrieve_android_lineage_sources$ du -sh logs/kernel-log.txt_09Sep21_15_49_testing_cgroups 
+971M	logs/kernel-log.txt_09Sep21_15_49_testing_cgroups
+ cat logs/kernel-log.txt_09Sep21_14_54_testing_cgroups | grep "cheduling best effort task" | wc -l
+30956
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "Scheduling best effort task" | wc -l
+28711
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "testing if cpu 1 is the last to shutdown" | wc -l
+2042003
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "testing if cpu 2 is the last to shutdown" | wc -l
+1030487
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "testing if cpu 5 is the last to shutdown" | wc -l
+972544
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "testing if cpu 6 is the last to shutdown" | wc -l
+253505
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "testing if cpu 7 is the last to shutdown" | wc -l
+218317
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "WARINING blocking best effort task" | wc -l
+2
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "Scheduling second candidate task" | wc -l
+6944
+ 
+
+
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "Scheduling second candidate task" | wc -l
+6944
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "Scheduling second candidate task" | wc -l
+0
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "Scheduling second candidate task" | wc -l
+742
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "Scheduling second candidate task" | wc -l
+809
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "Scheduling best effort task" | wc -l
+4650
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "Scheduling best effort task" | wc -l
+5781
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "testing if cpu 1 is the last to shutdown" | wc -l
+476637
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "testing if cpu 5 is the last to shutdown" | wc -l
+236715
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "testing if cpu 6 is the last to shutdown" | wc -l
+41496
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "testing if cpu 7 is the last to shutdown" | wc -l
+55086
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "simulating sending ipi_pending from cpu" | wc -l
+0
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "simulating sending" | wc -l
+0
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n " simulating sending" | wc -l
+0
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n " is the last busy cpu to shut down" | wc -l
+2929
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "is the last busy cpu to shut down" | wc -l
+2978
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "1 is the last busy cpu to shut down" | wc -l
+0
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "2 is the last busy cpu to shut down" | wc -l
+0
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "6 is the last busy cpu to shut down" | wc -l
+1756
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "5 is the last busy cpu to shut down" | wc -l
+0
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "7 is the last busy cpu to shut down" | wc -l
+1407
+ cat logs/kernel-log.txt_09Sep21_19_29_testing_cgroups | grep -n "7 is the last busy cpu to shut down" | wc -l
+28
+ cat logs/kernel-log.txt_09Sep21_19_29_testing_cgroups | grep -n "7 is the last busy cpu to shut down" | wc -l
+31
+ cat logs/kernel-log.txt_09Sep21_19_29_testing_cgroups | grep -n "7 is the last busy cpu to shut down" | wc -l
+31
+ cat logs/kernel-log.txt_09Sep21_19_29_testing_cgroups | grep -n "7 is the last busy cpu to shut down" | wc -l
+60
+ cat logs/kernel-log.txt_09Sep21_19_29_testing_cgroups | grep -n "simulating sending ipi_pending from cpu" | wc -l
+1
+ cat logs/kernel-log.txt_09Sep21_19_29_testing_cgroups | grep -n "simulating sending ipi_pending from cpu" | wc -l
+1
+ cat logs/kernel-log.txt_09Sep21_19_29_testing_cgroups | grep -n "simulating sending ipi_pending from cpu" | wc -l
+1
+ cat logs/kernel-log.txt_09Sep21_19_29_testing_cgroups | grep -n "simulating sending ipi_pending from cpu" | wc -l
+1
+
+
+IPI implementation 
+----------- adding declaration of variable in core.c
+----------- adding function reschedule current in core.c
+-----------initialisation in function  sched_init()			
+----------- adding the if else in function __schedule()
+-+---------- clearing ipi pending function __schedule() 
+
+	
+Task migration implementation
+--------------- adding config in Kconfig file
+--------------- adding extern int cpu_sched_status[NR_CPUS] __cacheline_aligned;  in kernel/sched/iddle.c
+--------------- adding extern struct task_group * lazy_group;  in kernel/sched/iddle.c;
+--------------- adding exporting staff of lazy_group in core.c
+--------------- initializing lazy_group in core.c
+--------------- adding prototypes and body of functions is_any_bigcore_busy, my_pick_next_entity, my_migrate_task in sched.h and core.c resepectively
+	
+	
+	https://www.sigmobile.org/mobisys/2022/
+	
+	
+	
+	->Commandes utilisées par Boris 
+	->pour tester la connection côté client. 
+	 netstat -tlpun | grep 5000
+	 tcpdump "port 5000"
+	->Pour tester la connection côté serveur. 
+	
+Workaround assez utile pour poetry
+poetry export --without-hashes --dev -f requirements.txt > requirements.txt && \
+    pip install -r requirements.txt
+    
+    command to execute local deploy
+    ./local_deploy.sh 5554 9992 ./log_file ./mnist 0 0 1000 3000 0.0005 1 1 0 0 0 0 0
+   
+   command to compile client 
+   ./gradlew assembleDebug 
+   
+   command to compile and start server
+    mvn clean; mvn -Dport=9992 tomcat7:run
+    ./start_server.sh 9992 server_log_file
+
+   
+    Command to start fleet driver
+    mvn clean install; mvn exec:java -Dexec.mainClass="coreComponents.Driver"       -Dexec.args="http://localhost:9992/Server/Server           /home/patrick/opportunistic_tasks_android/installing_fleet/fleet/mnist /home/patrick/opportunistic_tasks_android/installing_fleet/fleet/mnist 0 0           1000 3000 0.0005 1 1 0 0 0           0 0" 
+    
+    mvn clean install, mvn exec:java -Dexec.mainClass="coreComponents.Driver"       -Dexec.args="http://localhost:9992/Server/Server           /home/patrick/opportunistic_tasks_android/installing_fleet/fleet/mnist /home/patrick/opportunistic_tasks_android/installing_fleet/fleet/mnist 0 0           1000 3000 0.0005 1 1 0 0 0           0 0"
+    
+ ./start_driver.sh 9992 ./driver_log_file ./mnist 0 0 1000 3000 0.0005 1 1 0 0 0 0 0
+ 
+ 
+ 
+  ./start_manipulate_client_after_compile.sh emulator-5554 9992 client_log_file 
+    ./start_manipulate_client_after_compile.sh 0B051JECB15861 9992 client_log_file 
+    
+    
+    
+    
+    
+    
+    -------------- EVALUATION EXPRESS DE VLAD ------------------
+	commande pour stopper/demarrer le cpu X : echo "0/1" >  /sys/devices/system/cpu/cpuX/online
+	commande pour la conso_energetique :  dumpsys batterystats | grep "Uid u"
+	
+   ------------------ Battery historian port : 9900 ----------------------------------------
+       taskset -p mask PID   (pour set le cpu mask d'un thread)
+       ps -T -o psr,tid,pcpu PID_DE_L'APP_A_OBSERVER .  (pour observer les threads de l'application)
+       adb shell dumpsys batterystats --reset
+       
+       mkdir folder_name
+       adb shell dumpsys batterystats > folder_name/batterystats.txt
+       adb bugreport folder_name/bugreport.txt
+       
+  ------------------- Get kernel panic logs ----------------------------------------------
+  adb pull  /sys/fs/pstore/console-ramoops-0 kernel_panic_logs/
+     
+	----------------------------
+	
+	
+	To implement............... 
+	
+	git tag : Before implementing removal of a task from the best effort fl group. The migration is stable at this point because, we limited only on big socket (>=6) , the Energy Discounted (Meng Zhu) policy regarding using cpu states, We also limited  only on big socket, migration process of best effort tasks present present alone on a socket,  
+	
+	
+	
+      in Kconfig 	
+	
+	config BEST_EFFORT_FL_TASK_REMOVAL
+	bool " handle adding a task  to best_effort_fl_removed, depends on BEST_EFFORT_FL_TASK_SCHEDULING"
+	default y
+	help
+	    	To implement this functionnnality we tried to handle the case when a new task group is setted online 
+	    	in function cpu_cgroup_css_online(), when defining the name of the new task group, every task 
+	    	that will be added in this group will change it previous task group, and if the previous was the best_effort_fl
+	    	the task group will theorically not longer be a best effort (look at cpu_cgroup_attach->sched_move_task->sched_change_group).
+	    	In our test in CONFIG_BEST_EFFORT_FL_TASK_SCHEDULING implementation, the test on BEST_EFFORT_FL_GROUP_ID 
+ 		(task_group(p)->group_id == BEST_EFFORT_FL_GROUP_ID) should return false. 
+ 		And we also hope that in path 
+ 		sched_change_group()->task_change_group[_fair]()->task_move_group_fair()->detach_task_cfs_rq->detach_entity_cfs_rq() 
+ 		the global lazy variable used in config CONFIG_BEST_EFFORT_FL_TASK_MIGRATION_FROM_IDLE_CLUSTER is also updated so that migration 			is not applied on task added in new created best_effort_fl_removed file
+	    	 
+
+#ifdef CONFIG_BEST_EFFORT_FL_TASK_REMOVAL
+#endif	
+	
+	in file sched.h
+#ifdef CONFIG_BEST_EFFORT_FL_TASK_REMOVAL
+#endif		
+#define  BEST_EFFORT_FL_REMOVED_GROUP_ID     2
+	
+
+
+in file core.c
+#ifdef CONFIG_BEST_EFFORT_FL_TASK_REMOVAL
+#endif	
+char best_effort_removed_file_name[] = "best_effort_fl_removed";
+
+#ifdef CONFIG_BEST_EFFORT_FL_TASK_REMOVAL
+#endif	
+if (strcmp ((const char *) name_buf, best_effort_removed_file_name) == 0)  {
+		printk ("[CONFIG_BEST_EFFORT_FL_TASK_CGROUP_HANDLING]  setting the group id to BEST_EFFORT_FL_REMOVED_GROUP_ID");
+		tg->group_id = BEST_EFFORT_FL_REMOVED_GROUP_ID;
+	} 
+	
+	
+	In fair.c add the the test 
+	#ifdef CONFIG_BEST_EFFORT_FL_TASK_REMOVAL
+#endif	
+	if (task_group(p)->group_id == BEST_EFFORT_FL_REMOVED_GROUP_ID) {	
+	 	printk("[CONFIG_BEST_EFFORT_FL_TASK_SCHEDULING]  Scheduling best effort task %d '%.*s' (state %ld flag 0x%x)"
+                                                  "on cpu %d IS_KERNEL %d parent %d , current sched_status %d, current_task_id = %d , current_task_group_id %d\n", 
+							p->pid, TASK_COMM_LEN, p->comm, p->state, p->flags,  
+                                                    my_cpu_id, p->mm ? 0 : 1, p->parent->pid, cpu_sched_status[my_cpu_id], current->pid, task_group(current)->group_id);
+	}
+	
+	
+	
+	
+	#ifdef CONFIG_BEST_EFFORT_IDLE_TEST
+        
+#else
+
+
+
+change remote git 
+git remote set-url origin 
+
+wakeup vlad phone
+adb shell input keyevent KEYCODE_WAKEUP
+To get root command executed from computer, add "su -c" before the command
+Sur le téléphone de Vlad Sony-Xperia, version android 25, ps command inutile pour avoir les sous-thread, 
+même dans le logcat impossible de voir les sous-thread
+Apparemment c'est un seul socket de quatre cores, pas la peine de pinner. Test avec 1-4 cores. 
+To do, demain, première heure si le Tout Puissant le veut. 
+
+
+Prochain téléphone...
+
+Heimdall usefull commands
+heimdall download-pit --output pit.pit
+ sudo heimdall-frontend
+heimdall flash --RECOVERY twrp-3.6.0_9-0-dreamlte.img
+lien utile installer les packets et aller au download mode avec le cable connecter puis flasher le recovery.img 
+contenu dans les archives de la stock ROM dans le dossier
+G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/AP_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship_meta_OS9
+https://android.stackexchange.com/questions/130392/heimdall-error-protocol-initialisation-failed-on-ubuntu
+
+sudo heimdall flash --APNHLOS NON-HLOS.bin --ABOOT aboot.mbn --BOOT boot.img --HIDDEN hidden.img.ext4 --MDM modem.bin --RECOVERY recovery.img
+
+sudo heimdall flash  --BOOT boot.img --RECOVERY recovery.img --SYSTEM system.img
+
+samloader -m SM-G950F -r XSG checkupdate 
+G950FXXUCDUD1/G950FOXMCDUD1/G950FXXUCDUD1/G950FXXUCDUD1
+
+
+samloader -m SM-G950F -r XSG download -v G950FXXUCDUD1/G950FOXMCDUD1/G950FXXUCDUD1/G950FXXUCDUD1 -O /home/patrick/opportunistic_tasks_android/Samsung_galaxyS8/downloading_exact_binary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

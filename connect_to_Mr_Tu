@@ -1,0 +1,1315 @@
+to connect to Mr Tu vpn 
+1 - comment to line  "data-ciphers AES-128-GCM" in his code
+2 - sudo openvpn --config wapet.ovpn --auth-retry interact
+3 - ssh -i openssh_key_Tu_Dinh_Ngoc.key sepia@192.168.0.5
+ssh lwapet@134.214.108.123
+lwapet2021
+to clean my local directory
+rm android/lineage/out/*
+
+I regularly if needed update local files with remotes (from android/lineage)
+
+-----> Updating  binaries generated on Mr Tu servers
+>rm -rfv out/target/product/bramble/*
+>mkdir -p out/target/product/bramble
+
+cp out/target/product/bramble/lineage-18.1-20210421-UNOFFICIAL-bramble.zip out/target/product/bramble/lineage-18.1-20210421-UNOFFICIAL-bramble.zip_$(date +'%d%h%y_%H_%M')
+cp out/target/product/bramble/boot.img out/target/product/bramble/boot.img_$(date +'%d%h%y_%H_%M')
+cp out/target/product/bramble/boot.img out/target/product/bramble/boot.img_$(date +'%d%h%y_%H_%M')
+>scp -i ../../openssh_key_Tu_Dinh_Ngoc.key sepia@192.168.0.5:/home/sepia/android/lineage/out/target/product/bramble/boot.img  /home/lavoisier/svn_workspace/wapet/security/opportunistic_tasks_android/android/lineage/out/target/product/bramble
+>scp -i ../../openssh_key_Tu_Dinh_Ngoc.key sepia@192.168.0.5:/home/sepia/android/lineage/out/target/product/bramble/lineage-18.1-20210421-UNOFFICIAL-bramble.zip  /home/lavoisier/svn_workspace/wapet/security/opportunistic_tasks_android/android/lineage/out/target/product/bramble/lineage-18.1-20210421-UNOFFICIAL-bramble.zip
+
+
+-----> Preparing the Phone (https://wiki.lineageos.org/devices/bramble/install)
+> MANUALLY Activate developper mode (hit 7 times build options) ------ REPEAT THIS STEP AT EACH BUILD___No_longer_necessary__
+> MANUALLY Activate USB Debugging  ----------------------------------- REPEAT THIS STEP AT EACH BUILD___
+> MANUALLY Activate OEM Unlock (system->developper options)
+> MANUALLY Connect USB  
+> adb reboot bootloader / MANUALLY down+power   ++ fastboot devices (for verification)
+> fastboot flashing unlock
+> MANUALLY/OPTIONNALY Reboot----------------------------------------- REPEAT THIS STEP AT EACH BUILD
+
+>>> update binaries
+>>> adb reboot bootloader/ MANUALLY down+power ---------------------- REPEAT THIS STEP AT EACH BUILD
+> fastboot flash boot android/lineage/out/target/product/bramble/boot.img--- THIS STEP AT EACH BUILD, fastboot reboot.
+> MANUALLY Select Recovery Mode ------------------------------------- REPEAT THIS STEP AT EACH BUILD___
+> MANUALLY  -> Factory Reset-> Format Data -> Return to Main--------- REPEAT THIS STEP AT EACH BUILD___
+> MANUALLY -> Apply update->Apply from ADB--------------------------- REPEAT THIS STEP AT EACH BUILD___
+> adb sideload out/target/product/bramble/linea****bramble.zip------- REPEAT THIS STEP AT EACH BUILD___
+> MANUALLY -> Back arrow-> reboot the system Now -------------------- REPEAT THIS STEP AT EACH BUILD___
+
+
+
+CAN OBTAIN DMESG FROM PHONE
+> adb root 
+> adb shell cat /dev/dmsg > kernel-log.txt
+> adb shell dmesg -T > logs/kernel-log.txt_$(date +'%d%h%y_%H_%M')_testing_benchmark_app_1_times
+> adb logcat > logs/logcat-log.txt_$(date +'%d%h%y_%H_%M')_testing_benchmark_app_1_times
+
+
+
+CONNECTING TO VISUAL STUDIO 
+> extension: Remote SSH
+> add new host   fill with sepia@192.168.0.5 ssh -i /home/lavoisier/svn_workspace/wapet/security/opportunistic_tasks_android/openssh_key_Tu_Dinh_Ngoc.key sepia@192.168.0.5
+
+> MANUALLY F1 +  Remote-SSH: Connect to Host 
+> MANUALLY Open in file side, the remote window
+> MANUALLY Modify and recompile
+    source build/envsetup.sh 
+    croot
+    time brunch bramble
+
+
+WARNING-MAKING .android ACCESSIBLE BY ANDROID STUDIO and ADB
+after exporting the ~/.android folder on another disk 
+(media/lavoisier/ab6e6186-d536-4b99-8c57-d6a489e52a7d/home/lavoisier/from_103GB_old_partition/android),
+ I need everytime to link it to the expected one:
+ln -s /media/lavoisier/ab6e6186-d536-4b99-8c57-d6a489e52a7d/home/lavoisier/from_103GB_old_partition/android ~/.android
+
+
+WORKING ON LIRIS SERVER
+to do first
+git fetch https://github.com/lwapet/android_kernel scheduler_modifications:scheduler_modifications
+> adb shell dmesg -T > logs/kernel-log.txt_$(date +'%d%h%y_%H_%M')_testing_cgroups
+
+
+Note : this link probably resolved the signature resolution failed problem. https://forum.xda-developers.com/t/build-props-tweaks.4257725/
+I had to add some lines in the /sys/build.prop file. 
+
+
+grep utility
+grep --color -rnE '\<(android.database.ContentOb.*|android.net.Uri|android.database.Cursor|getColumnIndex|query|android.provider.*|android.content.ContentResolver)\>' 
+
+To do, rewrite all configs usages in kernel by writing CONFIG, before. 
+
+///  to create cgroups directories
+# mount -t tmpfs cgroup_root /sys/fs/cgroup
+	# mkdir /sys/fs/cgroup/cpu
+	# mount -t cgroup -ocpu none /sys/fs/cgroup/cpu
+	# cd /sys/fs/cgroup/cpu
+
+	# mkdir multimedia --- best_effort_fl	# create "multimedia" group of tasks
+	# mkdir browser		# create "browser" group of tasks
+
+	# #Configure the multimedia group to receive twice the CPU bandwidth
+	# #that of browser group
+
+	# echo 2048 > multimedia/cpu.shares
+	# echo 1024 > browser/cpu.shares
+
+	# firefox &	# Launch firefox and move it to "browser" group
+	# echo <firefox_pid> > browser/tasks
+
+	# #Launch gmplayer (or your favourite movie player)
+	# echo <movie_player_pid> > multimedia/tasks
+	
+	
+	
+	#ifdef CONFIG_BEST_EFFORT_FL_TASK_CGROUP_HANDLING
+        root_task_group.group_id = DEFAULT_TASK_GROUP_ID; 
+        printk ("[CONFIG_BEST_EFFORT_FL_TASK_CGROUP_HANDLING] initializing root_task_group_id to %d and testing kmalloc", root_task_group.group_id );
+
+        name_buf = kmalloc(NAME_MAX + 1, GFP_KERNEL);
+        if (!name_buf){
+                printk("[CONFIG_BEST_EFFORT_FL_TASK_CGROUP_HANDLING] allocation was not good");
+        }else{
+                printk("[CONFIG_BEST_EFFORT_FL_TASK_CGROUP_HANDLING] allocation was good");
+                kfree(name_buf); 
+        }
+#endif 
+
+
+
+#ifdef CONFIG_BEST_EFFORT_FL_TASK_CGROUP_HANDLING
+        printk("[CONFIG_FL_TASK_TRACING_SHEDULER] initialising the root_task_group  in function %s after if(alloc_size)", __FUNCTION__); 
+
+        printk ("[CONFIG_BEST_EFFORT_FL_TASK_CGROUP_HANDLING] in function initializing root_task_group_id to %d and testing kmalloc", root_task_group.group_id );
+#endif 
+
+	
+	
+	#if defined(CONFIG_FAIR_GROUP_SCHED) || defined(CONFIG_RT_GROUP_SCHED)
+	struct task_group *tg = task_group(p);
+	try to print tg->id = BEST_EFFORT_FL_GROUP_ID;
+	#endif
+	also try to print p->se.cfs_rq
+	
+add a line in cpu_cgroup_attach to capture the callback 
+
+add line in function sched_change_group and set_task_rq
+
+test before the sched task group is updated by the css one. 
+
+test after the sched task group is updated by the css one. 
+
+
+test before  the cfs_rq of the se is updated in the scheduler. 
+	
+test after  the cfs_rq of the se is updated in the scheduler. 
+	
+	
+	
+	
+	
+	
+	
+	Modification 1 cpu_cgroup_attach
+	Modification 2 adding task_group_id
+	Modification 3 sched_change_group
+	Modification 4 set_task_rq in sched.h
+	
+	Modification 5 cpu_sched_status in sched.h
+	Modifiction 6 enums in shed.h
+	Modification 7 __schedule function
+	Modification 8 function is_any_other_bigcore_busy
+	Modification 9 config 	CONFIG_BEST_EFFORT_FL_TASK_SETTING_CPU_STATES
+
+
+	
+	
+	tracé le 0 et les best efforts, 
+	
+	         SCHED_STATUS_UNDEF=0, OK---------------------------------------------------
+         SCHED_STATUS_BUSY=1, OK------------------------------------------------------------
+         SCHED_STATUS_BEST_EFFORT=2, To see (last implem)
+         SCHED_STATUS_IDLE=3,  OK
+         SCHED_STATUS_BEST_EFFORT_RUNNING=4, OK
+         SCHED_STATUS_BEST_EFFORT_IDLE=5,   Problem --- not only best effort is on the queue
+
+	
+	
+	to do :
+	
+	pareil pour at_least_one_sibling_cpu_is_busy
+	
+	static inline bool funcion get_number_of_busy_sibling_cpu(int current_cpu){
+		int i, ret=0;
+		if (current_cpu >= 0 && current_cpu <= 5){
+			for(i=3; i<8; i++) {
+				if (i == me) continue;
+				if (cpu_sched_status[i] == SCHED_STATUS_BUSY || cpu_sched_status[i] == SCHED_STATUS_UNDEF){	ret++;}
+			}
+		}else if (current_cpu == 6 ) {
+			if (cpu_sched_status[7] == SCHED_STATUS_BUSY || cpu_sched_status[7] == SCHED_STATUS_UNDEF){	ret++;}
+		}else if ( current_cpu == 7) {
+			if (cpu_sched_status[6] == SCHED_STATUS_BUSY || cpu_sched_status[6] == SCHED_STATUS_UNDEF){	ret++;}
+		}
+		return ret;
+	}
+	
+	static inline bool funcion at_least_one_sibling_cpu_is_busy(){
+		int i;
+		if (i >= 0 && i <= 5){
+			for(i=3; i<8; i++) {
+				if (i == me) continue;
+				if (cpu_sched_status[i] == SCHED_STATUS_BUSY || cpu_sched_status[i] == SCHED_STATUS_UNDEF){	return true;}
+			}
+		}else if (i == 6 ) {
+			if (cpu_sched_status[7] == SCHED_STATUS_BUSY || cpu_sched_status[7] == SCHED_STATUS_UNDEF){	return true;}
+		}else if ( i == 7) {
+			if (cpu_sched_status[6] == SCHED_STATUS_BUSY || cpu_sched_status[6] == SCHED_STATUS_UNDEF){	return true;}
+		}
+		return false;
+	}
+	
+	
+	
+	
+	
+	printk("[CONFIG_BEST_EFFORT_FL_TASK_SCHEDULING] in function %s, picking the next task to be scheduled", __FUNCTION__); 
+	
+	
+	if(se){
+		if (entity_is_task(se)) {
+			struct task_struct *p = task_of(se);
+			if (task_group(p)->group_id == BEST_EFFORT_FL_GROUP_ID) {
+				struct sched_entity *second = __pick_next_entity(se);
+				if (!second) { // second is null 
+						//(the first se obtained was the last task)
+						// and it is a best effort task 
+					int my_cpu_id = smp_processor_id();
+					if (at_least_one_sibling_cpu_is_busy(my_cpu_id){
+												
+					
+					/* config cache misses
+					if (total_misses() < misses_threshold){
+						printk("[CONFIG_BEST_EFFORT_FL_TASK_SCHEDULING] work conserving context best effort task is scheduled\n");
+					*/					
+						printk("[CONFIG_BEST_EFFORT_FL_TASK_SCHEDULING] best effort task is scheduled\n");
+					/* config cache misses
+					}else{
+						printk("[CONFIG_BEST_EFFORT_FL_TASK_SCHEDULING] non work conserving context best effort task is scheduled\n");
+						return NULL
+					}
+					*/
+					}
+				} else { // second is not null ( it is probably a normal task 
+					 // even if it is a best effort, we run it)
+					se = second ; 
+				}
+			
+			}
+		} else {
+			// error entity is not a task 
+			printk("[CONFIG_BEST_EFFORT_FL_TASK_SCHEDULING] the entity is not a task\n");
+		}
+	}
+	
+	
+	
+	if (se && se->my_q && se->my_q->tg && se->my_q->tg->group_id == LAZY_GROUP_ID) {
+		struct sched_entity *second = __pick_next_entity(se);
+		// trace_printk("[DEBUG] picked lazy group \n");
+		if (!second) {
+			int my_cpu_id = smp_processor_id();
++			// trace_printk("[DEBUG] No second\n");
++
++			// we are about to sched lazy
++			// do non work conserving
++			// if (lazy_on_all_core || my_cpu_id > 3) {
++			if (my_cpu_id > 3) {
++				// we only need to check our sibliings
++				//if (idle_corun ? (!everyone_is_waiting_for_me(my_cpu_id)) : is_any_other_bigcore_busy(my_cpu_id)) {   ### ### ### ### ### testing if other core is in running state
++				int busy_cpu_num = is_any_other_bigcore_busy(my_cpu_id);
++#ifdef CONFIG_MZHU_PMU_COUNTER
++				u64 y = total_misses();                                                                                 ### ### ### ### ### counting total misses 
++#ifdef CONFIG_MZHU_DEBUG
++				trace_printk("cycles %llu misses %llu\n",x, y);
++#endif
++#ifdef CONFIG_MZHU_DEBUG
++				trace_printk("freeness %llu\n",x);
++#endif
++#endif
++				if (busy_cpu_num
++#ifdef CONFIG_MZHU_PMU_COUNTER
++					   && (y < misses_threshold)
++#endif
++				) {
++				// if (my_cpu_id > 3 ? is_any_other_bigcore_busy(my_cpu_id) : is_any_other_littlecore_busy(my_cpu_id)) {
++#ifdef CONFIG_MZHU_DEBUG
++					trace_printk("[DEBUG] Lazy task is scheduled\n");
++#endif
++				} else {
++					// non-work-conserving
++//#ifdef CONFIG_MZHU_DEBUG
++					trace_printk("[DEBUG] Non-work-conserving return NULL\n");
+ //#endif
++					return NULL;
++				}
++			}
++		} else {
++			se = second;
++		}
++	}
++#endif
+	
+	
+	
+	
+	
+	
+	
+	expe file kernel-log.txt_06Sep21_18_47_testing_cgroups
+	
+	commands to analyse log file
+	cat logs/kernel-log.txt_08Sep21_11_59_testing_cgroups | grep "Scheduling first candidate task " | wc -l
+	add command -w to dmseg to maintain long ouputs
+	
+	------------ last results 
+patrick@patrick-HP-ProBook-650-G2:~/trying_to_retrieve_android_lineage_sources$ du -sh logs/kernel-log.txt_09Sep21_15_49_testing_cgroups 
+971M	logs/kernel-log.txt_09Sep21_15_49_testing_cgroups
+ cat logs/kernel-log.txt_09Sep21_14_54_testing_cgroups | grep "cheduling best effort task" | wc -l
+30956
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "Scheduling best effort task" | wc -l
+28711
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "testing if cpu 1 is the last to shutdown" | wc -l
+2042003
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "testing if cpu 2 is the last to shutdown" | wc -l
+1030487
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "testing if cpu 5 is the last to shutdown" | wc -l
+972544
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "testing if cpu 6 is the last to shutdown" | wc -l
+253505
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "testing if cpu 7 is the last to shutdown" | wc -l
+218317
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "WARINING blocking best effort task" | wc -l
+2
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "Scheduling second candidate task" | wc -l
+6944
+ 
+
+
+ cat logs/kernel-log.txt_09Sep21_15_49_testing_cgroups | grep -n "Scheduling second candidate task" | wc -l
+6944
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "Scheduling second candidate task" | wc -l
+0
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "Scheduling second candidate task" | wc -l
+742
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "Scheduling second candidate task" | wc -l
+809
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "Scheduling best effort task" | wc -l
+4650
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "Scheduling best effort task" | wc -l
+5781
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "testing if cpu 1 is the last to shutdown" | wc -l
+476637
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "testing if cpu 5 is the last to shutdown" | wc -l
+236715
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "testing if cpu 6 is the last to shutdown" | wc -l
+41496
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "testing if cpu 7 is the last to shutdown" | wc -l
+55086
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "simulating sending ipi_pending from cpu" | wc -l
+0
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "simulating sending" | wc -l
+0
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n " simulating sending" | wc -l
+0
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n " is the last busy cpu to shut down" | wc -l
+2929
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "is the last busy cpu to shut down" | wc -l
+2978
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "1 is the last busy cpu to shut down" | wc -l
+0
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "2 is the last busy cpu to shut down" | wc -l
+0
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "6 is the last busy cpu to shut down" | wc -l
+1756
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "5 is the last busy cpu to shut down" | wc -l
+0
+ cat logs/kernel-log.txt_09Sep21_19_19_testing_cgroups | grep -n "7 is the last busy cpu to shut down" | wc -l
+1407
+ cat logs/kernel-log.txt_09Sep21_19_29_testing_cgroups | grep -n "7 is the last busy cpu to shut down" | wc -l
+28
+ cat logs/kernel-log.txt_09Sep21_19_29_testing_cgroups | grep -n "7 is the last busy cpu to shut down" | wc -l
+31
+ cat logs/kernel-log.txt_09Sep21_19_29_testing_cgroups | grep -n "7 is the last busy cpu to shut down" | wc -l
+31
+ cat logs/kernel-log.txt_09Sep21_19_29_testing_cgroups | grep -n "7 is the last busy cpu to shut down" | wc -l
+60
+ cat logs/kernel-log.txt_09Sep21_19_29_testing_cgroups | grep -n "simulating sending ipi_pending from cpu" | wc -l
+1
+ cat logs/kernel-log.txt_09Sep21_19_29_testing_cgroups | grep -n "simulating sending ipi_pending from cpu" | wc -l
+1
+ cat logs/kernel-log.txt_09Sep21_19_29_testing_cgroups | grep -n "simulating sending ipi_pending from cpu" | wc -l
+1
+ cat logs/kernel-log.txt_09Sep21_19_29_testing_cgroups | grep -n "simulating sending ipi_pending from cpu" | wc -l
+1
+
+
+IPI implementation 
+----------- adding declaration of variable in core.c
+----------- adding function reschedule current in core.c
+-----------initialisation in function  sched_init()			
+----------- adding the if else in function __schedule()
+-+---------- clearing ipi pending function __schedule() 
+
+	
+Task migration implementation
+--------------- adding config in Kconfig file
+--------------- adding extern int cpu_sched_status[NR_CPUS] __cacheline_aligned;  in kernel/sched/iddle.c
+--------------- adding extern struct task_group * lazy_group;  in kernel/sched/iddle.c;
+--------------- adding exporting staff of lazy_group in core.c
+--------------- initializing lazy_group in core.c
+--------------- adding prototypes and body of functions is_any_bigcore_busy, my_pick_next_entity, my_migrate_task in sched.h and core.c resepectively
+	
+	
+	https://www.sigmobile.org/mobisys/2022/
+	
+	
+	
+	->Commandes utilisées par Boris 
+	->pour tester la connection côté client. 
+	 netstat -tlpun | grep 5000
+	 tcpdump "port 5000"
+	->Pour tester la connection côté serveur. 
+	
+Workaround assez utile pour poetry
+poetry export --without-hashes --dev -f requirements.txt > requirements.txt && \
+    pip install -r requirements.txt
+    
+    command to execute local deploy
+    ./local_deploy.sh 5554 9992 ./log_file ./mnist 0 0 1000 3000 0.0005 1 1 0 0 0 0 0
+   
+   command to compile client 
+   ./gradlew assembleDebug 
+   
+   command to compile and start server
+    mvn clean; mvn -Dport=9992 tomcat7:run
+    ./start_server.sh 9992 server_log_file
+
+   
+    Command to start fleet driver
+    mvn clean install; mvn exec:java -Dexec.mainClass="coreComponents.Driver"       -Dexec.args="http://localhost:9992/Server/Server           /home/patrick/opportunistic_tasks_android/installing_fleet/fleet/mnist /home/patrick/opportunistic_tasks_android/installing_fleet/fleet/mnist 0 0           1000 3000 0.0005 1 1 0 0 0           0 0" 
+    
+    mvn clean install, mvn exec:java -Dexec.mainClass="coreComponents.Driver"       -Dexec.args="http://localhost:9992/Server/Server           /home/patrick/opportunistic_tasks_android/installing_fleet/fleet/mnist /home/patrick/opportunistic_tasks_android/installing_fleet/fleet/mnist 0 0           1000 3000 0.0005 1 1 0 0 0           0 0"
+    
+ ./start_driver.sh 9992 ./driver_log_file ./mnist 0 0 1000 3000 0.0005 1 1 0 0 0 0 0
+ 
+ 
+ 
+  ./start_manipulate_client_after_compile.sh emulator-5554 9992 client_log_file 
+    ./start_manipulate_client_after_compile.sh 0B051JECB15861 9992 client_log_file 
+    
+    
+    
+    
+    
+    
+    -------------- EVALUATION EXPRESS DE VLAD ------------------
+	commande pour stopper/demarrer le cpu X : echo "0/1" >  /sys/devices/system/cpu/cpuX/online
+	commande pour la conso_energetique :  dumpsys batterystats | grep "Uid u"
+	
+   ------------------ Battery historian port : 9900 ----------------------------------------
+       taskset -p mask PID   (pour set le cpu mask d'un thread)
+       ps -T -o psr,tid,pcpu PID_DE_L'APP_A_OBSERVER .  (pour observer les threads de l'application)
+       adb shell dumpsys batterystats --reset
+       
+       mkdir folder_name
+       adb shell dumpsys batterystats > folder_name/batterystats.txt
+       adb bugreport folder_name/bugreport.txt
+       
+  ------------------- Get kernel panic logs ----------------------------------------------
+  adb pull  /sys/fs/pstore/console-ramoops-0 kernel_panic_logs/
+     
+	----------------------------
+	
+	
+	To implement............... 
+	
+	git tag : Before implementing removal of a task from the best effort fl group. The migration is stable at this point because, we limited only on big socket (>=6) , the Energy Discounted (Meng Zhu) policy regarding using cpu states, We also limited  only on big socket, migration process of best effort tasks present present alone on a socket,  
+	
+	
+	
+      in Kconfig 	
+	
+	config BEST_EFFORT_FL_TASK_REMOVAL
+	bool " handle adding a task  to best_effort_fl_removed, depends on BEST_EFFORT_FL_TASK_SCHEDULING"
+	default y
+	help
+	    	To implement this functionnnality we tried to handle the case when a new task group is setted online 
+	    	in function cpu_cgroup_css_online(), when defining the name of the new task group, every task 
+	    	that will be added in this group will change it previous task group, and if the previous was the best_effort_fl
+	    	the task group will theorically not longer be a best effort (look at cpu_cgroup_attach->sched_move_task->sched_change_group).
+	    	In our test in CONFIG_BEST_EFFORT_FL_TASK_SCHEDULING implementation, the test on BEST_EFFORT_FL_GROUP_ID 
+ 		(task_group(p)->group_id == BEST_EFFORT_FL_GROUP_ID) should return false. 
+ 		And we also hope that in path 
+ 		sched_change_group()->task_change_group[_fair]()->task_move_group_fair()->detach_task_cfs_rq->detach_entity_cfs_rq() 
+ 		the global lazy variable used in config CONFIG_BEST_EFFORT_FL_TASK_MIGRATION_FROM_IDLE_CLUSTER is also updated so that migration 			is not applied on task added in new created best_effort_fl_removed file
+	    	 
+
+#ifdef CONFIG_BEST_EFFORT_FL_TASK_REMOVAL
+#endif	
+	
+	in file sched.h
+#ifdef CONFIG_BEST_EFFORT_FL_TASK_REMOVAL
+#endif		
+#define  BEST_EFFORT_FL_REMOVED_GROUP_ID     2
+	
+
+
+in file core.c
+#ifdef CONFIG_BEST_EFFORT_FL_TASK_REMOVAL
+#endif	
+char best_effort_removed_file_name[] = "best_effort_fl_removed";
+
+#ifdef CONFIG_BEST_EFFORT_FL_TASK_REMOVAL
+#endif	
+if (strcmp ((const char *) name_buf, best_effort_removed_file_name) == 0)  {
+		printk ("[CONFIG_BEST_EFFORT_FL_TASK_CGROUP_HANDLING]  setting the group id to BEST_EFFORT_FL_REMOVED_GROUP_ID");
+		tg->group_id = BEST_EFFORT_FL_REMOVED_GROUP_ID;
+	} 
+	
+	
+	In fair.c add the the test 
+	#ifdef CONFIG_BEST_EFFORT_FL_TASK_REMOVAL
+#endif	
+	if (task_group(p)->group_id == BEST_EFFORT_FL_REMOVED_GROUP_ID) {	
+	 	printk("[CONFIG_BEST_EFFORT_FL_TASK_SCHEDULING]  Scheduling best effort task %d '%.*s' (state %ld flag 0x%x)"
+                                                  "on cpu %d IS_KERNEL %d parent %d , current sched_status %d, current_task_id = %d , current_task_group_id %d\n", 
+							p->pid, TASK_COMM_LEN, p->comm, p->state, p->flags,  
+                                                    my_cpu_id, p->mm ? 0 : 1, p->parent->pid, cpu_sched_status[my_cpu_id], current->pid, task_group(current)->group_id);
+	}
+	
+	
+	
+	
+	#ifdef CONFIG_BEST_EFFORT_IDLE_TEST
+        
+#else
+
+
+
+change remote git 
+git remote set-url origin 
+
+wakeup vlad phone
+adb shell input keyevent KEYCODE_WAKEUP
+To get root command executed from computer, add "su -c" before the command
+Sur le téléphone de Vlad Sony-Xperia, version android 25, ps command inutile pour avoir les sous-thread, 
+même dans le logcat impossible de voir les sous-thread
+Apparemment c'est un seul socket de quatre cores, pas la peine de pinner. Test avec 1-4 cores. 
+To do, demain, première heure si le Tout Puissant le veut. 
+
+
+Prochain téléphone...
+
+Heimdall usefull commands
+heimdall download-pit --output pit.pit
+ sudo heimdall-frontend
+heimdall flash --RECOVERY twrp-3.6.0_9-0-dreamlte.img
+lien utile installer les packets et aller au download mode avec le cable connecter puis flasher le recovery.img 
+contenu dans les archives de la stock ROM dans le dossier
+G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/AP_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship_meta_OS9
+https://android.stackexchange.com/questions/130392/heimdall-error-protocol-initialisation-failed-on-ubuntu
+
+sudo heimdall flash --APNHLOS NON-HLOS.bin --ABOOT aboot.mbn --BOOT boot.img --HIDDEN hidden.img.ext4 --MDM modem.bin --RECOVERY recovery.img
+
+sudo heimdall flash  --BOOT boot.img --RECOVERY recovery.img --SYSTEM system.img
+
+samloader -m SM-G950F -r XSG checkupdate 
+G950FXXUCDUD1/G950FOXMCDUD1/G950FXXUCDUD1/G950FXXUCDUD1
+
+
+samloader -m SM-G950F -r XSG download -v G950FXXUCDUD1/G950FOXMCDUD1/G950FXXUCDUD1/G950FXXUCDUD1 -O /home/patrick/opportunistic_tasks_android/Samsung_galaxyS8/downloading_exact_binary 
+
+
+
+Command used to test the Stock Rom flashing
+ heimdall flash --BOOT G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/AP_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship_meta_OS9/boot.img --RECOVERY G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/AP_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship_meta_OS9/recovery.img --SYSTEM G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/AP_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship_meta_OS9/system.img   
+
+patrick@patrick-latitude-7520:~/opportunistic_tasks_android/Experiments_of_task_on_CPUs/Samsung_galaxyS8$ heimdall flash 
+ --UP_PARAM G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/BL_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship/up_param.bin
+--BOOTLOADER G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/BL_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship/sboot.bin
+ --PARAM G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/BL_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship/param.bin
+--CM G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/BL_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship/cm.bin   --RADIO G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/CP_G950FXXS9DTE1_CP15808913_CL17263988_QB30970277_REV00_user_low_ship/modem.bin --CP_DEBUG G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/CP_G950FXXS9DTE1_CP15808913_CL17263988_QB30970277_REV00_user_low_ship/modem_debug.bin --BOOT G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/AP_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship_meta_OS9/boot.img --RECOVERY G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/AP_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship_meta_OS9/recovery.img --SYSTEM G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/AP_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship_meta_OS9/system.img --USERDATA G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/AP_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship_meta_OS9/userdata.img  --CACHE G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/CSC_OXM_G950FOXM9DTE1_CL17263988_QB30973193_REV00_user_low_ship/cache.img  --OMR G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/CSC_OXM_G950FOXM9DTE1_CL17263988_QB30973193_REV00_user_low_ship/omr.img 
+ 
+
+
+heimdall flash 
+ --UP_PARAM G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/BL_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship/up_param.bin
+--BOOTLOADER G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/BL_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship/sboot.bin
+ --PARAM G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/BL_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship/param.bin
+--CM G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/BL_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship/cm.bin   --RADIO G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/CP_G950FXXS9DTE1_CP15808913_CL17263988_QB30970277_REV00_user_low_ship/modem.bin --CP_DEBUG G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/CP_G950FXXS9DTE1_CP15808913_CL17263988_QB30970277_REV00_user_low_ship/modem_debug.bin --BOOT G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/AP_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship_meta_OS9/boot.img --RECOVERY G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/AP_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship_meta_OS9/recovery.img --SYSTEM G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/AP_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship_meta_OS9/system.img --USERDATA G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/AP_G950FXXS9DTEA_CL17263988_QB31148472_REV00_user_low_ship_meta_OS9/userdata.img  --CACHE G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/CSC_OXM_G950FOXM9DTE1_CL17263988_QB30973193_REV00_user_low_ship/cache.img  --OMR G950FXXS9DTEA_G950FOXM9DTE1_PHN_9.0_files/CSC_OXM_G950FOXM9DTE1_CL17263988_QB30973193_REV00_user_low_ship/omr.img 
+ 
+
+
+
+
+
+Command finally used in folder downloading_exact_binary/from_drive
+
+heimdall flash --CM BL_G950FXXUCDUD1_CL21427293_QB39365966_REV00_user_low_ship/cm.bin  --PARAM BL_G950FXXUCDUD1_CL21427293_QB39365966_REV00_user_low_ship/param.bin --BOOTLOADER BL_G950FXXUCDUD1_CL21427293_QB39365966_REV00_user_low_ship/sboot.bin --UP_PARAM BL_G950FXXUCDUD1_CL21427293_QB39365966_REV00_user_low_ship/up_param.bin --RADIO CP_G950FXXUCDUD1_CP18734711_CL21427293_QB39365966_REV00_user_low_ship/modem.bin --CP_DEBUG CP_G950FXXUCDUD1_CP18734711_CL21427293_QB39365966_REV00_user_low_ship/modem_debug.bin --BOOT AP_G950FXXUCDUD1_CL21427293_QB39365966_REV00_user_low_ship_meta_OS9/boot.img --RECOVERY AP_G950FXXUCDUD1_CL21427293_QB39365966_REV00_user_low_ship_meta_OS9/recovery.img --SYSTEM AP_G950FXXUCDUD1_CL21427293_QB39365966_REV00_user_low_ship_meta_OS9/system.img --USERDATA AP_G950FXXUCDUD1_CL21427293_QB39365966_REV00_user_low_ship_meta_OS9/userdata.img  --CACHE CSC_OXM_G950FOXMCDUD1_CL21427293_QB39365966_REV00_user_low_ship/cache.img --OMR CSC_OXM_G950FOXMCDUD1_CL21427293_QB39365966_REV00_user_low_ship/omr.img 
+
+
+command to check cpu consumption
+ clean logcat clean.  dmesg and do it tow times 
+ > adb logcat -c
+ > adb shell "su -c dmesg -c"
+ > adb logcat > debuggingCPUConsumptionBug/logcat_log_$(date +'%d%h%y_%H_%M')_consumption_retriving_1_threads_on_1_cpu_during_2_minuts
+ > adb shell dmesg -T > kernel-log.txt_$(date +'%d%h%y_%H_%M')_1_threads_on_1_cpu_during_2_minuts
+ test and stress during one minut, and look at the line containing  "Estimated power use" of the output of this command
+ > dumpsys batterystats --charged com.opportunistask.scheduling.benchmarking_app_to_test_big_cores
+ If it works, we  should have something like that:
+  Estimated power use (mAh):
+    Capacity: 3000, Typical: 0, Computed drain: 21.2, actual drain: 0
+    Screen: 14.1 Excluded from smearing
+    Uid u0a217: 4.39 ( cpu=4.39 ) Including smearing: 4.60 ( proportional=0.208 )
+
+
+
+
+ > adb logcat > debuggingCPUConsumptionBug/logcat-output__consumption_retriving__1_threads_on_1_cpu_during_2_minuts.txt
+
+ > adb shell "su -c dmesg -T" > debuggingCPUConsumptionBug/kernel-log__1_threads_on_1_cpu_during_2_minuts.txt
+
+To synchronize hardware clock on phone I hitted https://serverfault.com/questions/576139/dmesg-time-vs-system-time-time-isnt-correct
+
+
+
+
+
+I had an error to build the tensorflow app project in command line so I updated gradle as mentionned in one of the ansewrs of this link https://stackoverflow.com/questions/55782093/error-minimum-supported-gradle-version-is-5-1-1-current-version-is-4-4-1-afte
+
+
+Pinning threads
+echo $(date +'%d%h%y_%H_%M') ; adb shell "su -c taskset -p 80 17516"
+Printing threads
+echo $(date +'%d%h%y_%H_%M'); adb shell "ps -T -o psr,tid,pcpu 11585" 
+Starting app
+echo $(date +'%d%h%y_%H_%M') ; bash install_benchmarking_app.sh
+
+
+
+To find a system file
+adb shell "find /sys/ | grep charge_counter"
+adb shell "find /sys/ | grep charging_enabled" from francis 
+/sys/devices/battery.XX/power_supply/battery/hv_charger_set  from frank
+File name in phone
+
+adb shell dumpsys battery unplug  reset
+
+File containing the maximum amout of possible battery on google pixel
+ls  /sys/devices/platform/soc/soc\:google,battery/power_supply/battery/charge_limit
+ /sys/devices/platform/soc/soc:google,charger/charge_stop_level
+
+File to deactivate battery charging on Samsung S8 
+/sys/devices/platform/battery/power_supply/battery/hv_charger_set
+/sys/devices/platform/battery/power_supply/battery/cc_info
+max value of cc_info : 3693000
+
+
+Pour la suite, la best effort task est efficace avec la freq max mais doit-elle empiéter sur les autre task. Evaluer l'efficacité avec l'interactive et des deux à la fois.
+
+
+
+   
+ 4 - Donc demain je prévois 
+   - effectuer les tests de variation de fréquence sur les configurations 2-1 et 1-2 si possible.
+   - rechercher le modèle du téléphone à acheter avec la bonne architecture et compatible lineage.
+  
+  
+
+   
+   
+      - grab la zone en surplus sur le graphe de l'éval 1-1. Et soustraire sur les données.
+      - effectuer les tests de variation de fréquence sur les configurations 1-1, 3-0, 6-0 si possible.
+      - comparer les résultats du cc_info avec l'API
+   - parler à Vlad de l'idée de repartition des tâches sur plusieurs thread 
+   - commender les banana cables
+   
+   
+    - envisager de programmer les mesure pour le tests utilsant le cc_info
+     - rechercher le fichier relatif au chargeur dans le samsung.
+    
+    
+    
+    
+    
+dreamlte:/sys/devices/platform # 
+dreamlte:/sys/devices/platform # 
+dreamlte:/sys/devices/platform # 
+dreamlte:/sys/devices/platform # find . | grep charger
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/addr
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/data
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/size
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/type
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/power
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/power/control
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/power/wakeup_prevent_sleep_time_ms
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/power/wakeup_abort_count
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/power/wakeup_active
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/power/wakeup_total_time_ms
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/power/wakeup_active_count
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/power/runtime_active_time
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/power/wakeup_max_time_ms
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/power/wakeup_count
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/power/wakeup_last_time_ms
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/power/wakeup
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/power/autosuspend_delay_ms
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/power/runtime_status
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/power/wakeup_expire_count
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/power/runtime_suspended_time
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/device
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/subsystem
+./10940000.hsi2c/i2c-11/11-003b/power_supply/mfc-charger/uevent
+./battery/power_supply/battery/hv_charger_set
+./battery/power_supply/battery/hv_charger_status
+./battery/power_supply/battery/hv_wc_charger_status
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power/control
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power/runtime_active_time
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power/autosuspend_delay_ms
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power/runtime_status
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power/runtime_suspended_time
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/type
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/power
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/power/control
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/power/wakeup_prevent_sleep_time_ms
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/power/wakeup_abort_count
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/power/wakeup_active
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/power/wakeup_total_time_ms
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/power/wakeup_active_count
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/power/runtime_active_time
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/power/wakeup_max_time_ms
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/power/wakeup_count
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/power/wakeup_last_time_ms
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/power/wakeup
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/power/autosuspend_delay_ms
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/power/runtime_status
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/power/wakeup_expire_count
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/power/runtime_suspended_time
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/device
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/subsystem
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/online
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/otg/uevent
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/data
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/type
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/power
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/power/control
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/power/wakeup_prevent_sleep_time_ms
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/power/wakeup_abort_count
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/power/wakeup_active
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/power/wakeup_total_time_ms
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/power/wakeup_active_count
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/power/runtime_active_time
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/power/wakeup_max_time_ms
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/power/wakeup_count
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/power/wakeup_last_time_ms
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/power/wakeup
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/power/autosuspend_delay_ms
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/power/runtime_status
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/power/wakeup_expire_count
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/power/runtime_suspended_time
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/device
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/subsystem
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/uevent
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/power_supply/max77865-charger/chip_id
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/driver_override
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/modalias
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/driver
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/subsystem
+./10970000.hsi2c/i2c-13/13-0066/max77865-charger/uevent
+dreamlte:/sys/devices/platform # 
+
+
+----------- Code to move data from powertool folders to kernel ridge one 
+cp -rfv google_pixel_varying_the_number_of_thread/machine_learning_datas/* ../../Experiments_of_task_on_CPUs/scripts_valuable_files/kernel_ridge_linear_model/data_google_pixel_4a_5g_varying_number_of_threads/
+cp -rfv google_pixel_4a_5g_varying_frequency/machine_learning_datas/* ../../Experiments_of_task_on_CPUs/scripts_valuable_files/kernel_ridge_linear_model/data_google_pixel_4a_5g_varying_frequency/
+cp -rfv samsung_galaxy_s8_varying_the_number_of_threads/machine_learning_datas/* ../../Experiments_of_task_on_CPUs/scripts_valuable_files/kernel_ridge_linear_model/data_samsung_galaxy_s8_varying_number_of_threads/
+cp -rfv samsung_galaxy_s8_varying_frequency/machine_learning_datas/* ../../Experiments_of_task_on_CPUs/scripts_valuable_files/kernel_ridge_linear_model/data_samsung_galaxy_s8_varying_frequency/
+
+
+
+env variable on windows
+
+C:\Program Files\Java\jdk-18
+%JAVA_HOME%\bin
+I needed to install java 1.8
+# command executed as administrator to make monker runner work. https://stackoverflow.com/questions/47307481/monkeyrunner-cant-be-started-up-with-an-error
+setx -m ANDROID_SWT "C:\Users\lavoi\AppData\Local\Android\Sdk\tools\lib\x86_64"
+and followed by this solution https://stackoverflow.com/questions/52815413/monkeyrunner-noclassdeffounderror-com-android-chimpchat-chimpchat
+and followed by the adding of Sdk\tools\bin in the system Path
+To integrate in the wsl linux bash script I followed this link
+https://superuser.com/questions/223104/setting-and-using-variable-within-same-command-line-in-windows-cmd-exe
+
+ 
+    python path on current installed windows
+    C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.1520.0_x64__qbz5n2kfra8p0
+    pip location 
+    C:\Users\lavoi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pip
+    pip module location 
+    c:\users\lavoi\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages
+    
+    
+    to print env variable 
+     Get-ChildItem Env:Path  | Format-Table -Wrap -AutoSize
+     
+     
+     
+    Command to run experiments 
+    > experiment_log_file.txt ; bash run_experiments.sh | tee -a experiment_log_file.txt 
+    Command to run the kernel ridge model
+    > log_file_for_marginal_effects.txt ; python3 kernel_ridge.py | tee -a log_file_for_marginal_effects.txt
+    
+  
+     
+     import sys
+
+locate_python = sys.exec_prefix
+
+print(locate_python)
+     
+     
+     retirer python des alias windows https://stackoverflow.com/questions/58754860/cmd-opens-windows-store-when-i-type-python
+     
+     
+     
+     
+     
+     
+  
+  
+  
+  Dadi : Junior Chedjou
+  Agathe Tchouta
+  Chimène Djomo
+  
+  
+Ezéchiel 18:14-20 Mais si un homme a un fils qui voie tous les péchés que commet son père, qui les voie et n'agisse pas de la même manière;[...]celui-là ne mourra pas pour l'iniquité de son père; il vivra. 
+C'est son père, [...], qui a fait au milieu de son peuple ce qui n'est pas bien, c'est lui qui mourra pour son iniquité. [...] le fils a agi selon la droiture et la justice, [...] il a observé et mis en pratique toutes mes lois; il vivra. - L'âme qui pèche, c'est celle qui mourra. Le fils ne portera pas l'iniquité de son père, et le père ne portera pas l'iniquité de son fils. La justice du juste sera sur lui, et la méchanceté du méchant sera sur lui.
+
+Deutéronome 24:16  On ne fera point mourir les pères pour les enfants, et l'on ne fera point mourir les enfants pour les pères; on fera mourir chacun pour son péché.
+	 
+
+	 
+	
+
+Intel type Intel64 Family 6 Model 140 Stepping 1  CPU0      1805           11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz  4              OK
+C:\\Users\\lavoi\\opportunist_task_on_android\\scripts_valuable_files\\experiment_automatization\\can_be_reused\\old_tools\\FIRST_RESULTS_Energy_in_mWs_with_correct_summary_and_reduced_samples_files\\000021-1-1__experiment_folder__25Jul22_19_38_57\\configuration_mesurement__reduced.csv
+
+
+Regex of cc_info_datas in thread result file.
+     "\n Cc_info at the beginning: " + begin_cc_info + " mAh" +
+      "\n Cc_info at the end: " + end_cc_info + " mAh" +
+     "\n Cc_info variation: " + cc_info_variation + " mAh \n";
+    
+    
+    
+  
+  Salut Vlad, comme compte rendu d'aujourd'hui. 
+  1- avant la réunion, j'ai continuer de ressortir les lessons learned des graphes du modèle, 
+  y compris les lessons lernead beaucoup plus génériques. 
+  2- Ensuite il y'a eu la réunion. 
+  3- Après la réunion, j'ai recencé les modifications à effectuer dans le code d'automatisation. 
+     a- Dans le code de l'application, il faut s'assurer que les valeurs du fichier cc_info 
+     sont bien écrites dans les fichiers que l'application envoie au script d'automatisation.
+     b- Dans le code du script d'automatisation, il faut prendre en compte les valeurs du fichier 
+     cc_info dans le calcul de l'énergie consommée par l'application, voici la formule: 
+           Energie = powermete_value - cc_info_at_beginning + cc_info_at_the_end
+     c- toujours dans le script d'automatisation, il faut prendre en compte le format des configurations du samsung S8, 
+         selon la repartition des socket 4 Littles, 4 Big cores. 
+		- Pour la génération des configurations à tester, il faut revoir l'algorithme
+              et voir si la limitation concernant les fréquences se rencontre sur le Samsung. 
+		  
+		- Lors du calibrage du téléphone, la prise en compte du bon dictionnaire de fréquence.  et la remise en état des bonne valeur de governor "interactive"
+		- Lors du parsing des fichiers des configurations à tester et lors de l'affichage des résultats. 
+		- La génération des summary file à partir des résultats des expés obtenus manuellement afin de les ajouter comme input data du modèle
+		- La prise en compte dans le modèle du format des données provenant du samsung. 
+      		
+   Pour l'instant ce sont les modifications que j'ai pu repertorier. J'ai commencé avec le 3-a
+   Je prévois continuer avec le rester demain et les tester si possible car je n'avais pas le téléphone avec moi aujourd'hui.  
+   
+   Bonne soirée Vlad. 
+   Cordialement
+   
+   
+   
+   Salut Vlad, Comme compte rendu d'aujourd'hui, 
+   1 - Hier j'ai oublié de mentionner quelques modifications à effectuer pour adapter le l'automatisation et le modèle au samsung. 
+   Ces modifications concernent principalement 
+     la génération du summary file des expés fait manuellement 
+     la prise en compte dans le modèle du format des données provenant du samsung 
+   Je les ai rajouté au compte rendu d'hier.
+   2 - Aujourd'hui je me suis focalisé sur la génération des configurations à tester pour le samsung s8, 
+   et dans le samsung s8 il y'a aussi la même limitation relative aux fréquences des cores sur le même socket qui ne peuvent pas être différentes. 
+   Voici le script qui a été produit [1]. 
+   Demain je prévois passer au calibrage du téléhpone et au parsing des fichiers résultats. 
+   
+   [1] Script de génération des configurations à tester pour le samsung galaxy S8. https://gitlab.liris.cnrs.fr/plwapet/scripts_and_relevant_files/-/blob/main/experiment_automatization/can_be_reused/generate_really_tested_configurations_for_samsung.py
+   
+   Bonne soirée Vlad. 
+   
+   
+   
+   
+   
+   
+   
+Salut Vlad comme compte rendu d'aujourd'hui, j'ai continué avec l'adaptation du code d'automatisation des expés au samsung galaxy s8. 
+  Je me suis principalement focalisé sur les parsing du fichier des inputs
+  et sur le calibrage du téléphone pour que le niveau  de batterie de départ soit le même pour toutes les expés. 
+  J'ai noté chaque modifications au cas où ce serait utile pour rendre le code encore plus générique.
+   Voici donc la liste des fonctions modifiées et des dictionnaires ajoutés jusqu'ici, je dois aussi les tester.
+   
+# Modified functions to integrate automatization of the samsung S8 
+#        P means that we added one paramater and passed it to subfunctions
+#        N means that we also modified the name of the function, in that case, we mention the new name
+#        F means that we added some if else in the functions   (Functionnal modifications)           
+#     Modification          old name                                                                    [new name]             
+#         P, N, F           produce_suitable_input_file_from_human_readable_and_google_pixel_format     produce_suitable_input_file_from_human_readable_and_phone_format
+#         P,    F           print_generic_format_from_configuration  
+#         P     F           print_generic_format_with_exact_frequencies_values
+#         P                 echo_configuration_with_exact_value_of_frequencies
+#         P,                get_frequency_from_core
+# 	    P,    F           perform_experiment_for_one_configuration
+#         P,    F           verify_battery_level
+#         P,                wait_for_app_threads_to_be_in_experiment_phase
+# 	    P,    F           reset_cpu_configuration
+#         P,    F           set_core_frequency
+# added dictionnaries: 
+# - > for charge_limit_files
+# - > for socket frequency levels
+
+J'ai aussi remarqué qu'une de mes fonctions de parsing avait une erreur mais c'est sans grand impacts sur les précédents résultats car cela concerne le format générique des configurations. 
+Je le note juste pour ne pas oublier de modifier les summary files en conséquence. 
+# To do, regenerate all summary files!!!!!
+# And correct the propblem with the frequency of medium core on generic file with exact value of frequency. 
+
+Demain je prévois passer au parsing des fichiers résultats.
+
+Bonne soirée Vlad. 
+
+
+
+Serge, Mirelle et Audrey RGONNAUD, 
+18 Gibson Drive,
+ AINOAI MOUNT PEARL CP 4005 CANADA
+ 
+ 
+ 
+ 
+ 
+ Salut Vlad, comme compte rendu d'aujourd'hui
+ J'ai continué avec l'adaptation du script d'automatisation des expés au samsung. 
+ Aujourd'hui j'ai implémenté le calcul de l'énergie. 
+ Et j'ai aussi débuggé tout le script. 
+ Et il fonctionne?
+ 
+ Je prévois lancer les expés lundi, je ne pouvais pas le faire aujourd'hui car  je ne suis pas allé au labo. 
+ Je prévois aussi continuer avec la prise en compte des résultats des expés dans le modèle. 
+ 
+
+ 
+ J'ai du enlever l'éteignage automatique de l'écran en installant l'application "no_screen_off"
+ 
+ 
+
+
+Quick experiment  (cc_info value is constant 6308000 and 6308000)
+
+idle 
+time   inst current samples   consumed Energy avg power  avg current  avg voltage  Exp Batt Life
+600.75 60.36	  3003768	11132.24	    339.72	   66.71	    5.10	     14.99 
+cc_
+1-0
+604.03 170.04       3020169	29802.83	    889.55	   177.62	    5.01	     5.63
+
+.377 27151 27279 V Benchmark_thread_:  Ending time: Mon, 29 Aug 2022 19:31:15 +0200 - Duration: 600007 seconds 
+08-29 19:31:15.377 27151 27279 V Benchmark_thread_:  Real workload: 3.1515804869814503E10 - Integer reached: 76586 - Number of reset = 0  
+08-29 19:31:15.377 27151 27279 V Benchmark_thread_:  Battery stats: 0 mAH 
+08-29 19:31:15.377 27151 27279 V Benchmark_thread_:  Computed Drain:  Null
+08-29 19:31:15.377 27151 27279 V Benchmark_thread_:  Start: 100 % - End: 100
+08-29 19:31:15.377 27151 27279 V Benchmark_thread_:  Cc_info at the beginning: 6309000 mAh
+08-29 19:31:15.377 27151 27279 V Benchmark_thread_:  Cc_info at the end: 6309000 mAh
+08-29 19:31:15.377 27151 27279 V Benchmark_thread_:  Cc_info variation: 0.0 mAh 
+
+
+0-1
+601.17 190.35       3005841	36050.37	1074.84	215.88	4.98	4.63
+hmark_thread_:  Real workload: 1.1810035755377695E11 - Integer reached: 144080 - Number of reset = 0  
+08-29 19:46:29.859 29029 29227 V Benchmark_thread_:  Battery stats: 0 mAH 
+08-29 19:46:29.859 29029 29227 V Benchmark_thread_:  Computed Drain:  Null
+08-29 19:46:29.859 29029 29227 V Benchmark_thread_:  Start: 100 % - End: 100
+08-29 19:46:29.859 29029 29227 V Benchmark_thread_:  Cc_info at the beginning: 6308000 mAh
+08-29 19:46:29.859 29029 29227 V Benchmark_thread_:  Cc_info at the end: 6308000 mAh
+08-29 19:46:29.859 29029 29227 V Benchmark_thread_:  Cc_info variation: 0.0 mAh 
+
+
+
+
+Salut Vlad, comme compte rendu d'aujourd'hui, 
+1- J'ai implémenté la prise en compte dans le modèle du format des configuration du samsung galaxy s8
+2- Concernant les expés, 
+	En voulant décharger le téléphone pour qu'il atteigne 50, je me suis rendu compte que le hv_charger_set mis à 0
+	faisait en sorte que le fichier cc_info n'augmente jamais et donc que les application utilisent prioritairement l'alimentation.
+	Finalement, lorsque la battérie du téléphone est à 100, je set ce fichier hv_charger_set à 0 et je lance les expés. 
+	
+	Mais je considère toujours le cc_info dans le calcul de l'énergie, 
+	ce calcul me semble beaucoup plus fiable et conforme aux résultats avec le google pixel, car j'ai refait quelque test pour m'en assurer [1]. 
+	
+	J'ai aussi du enlever l'éteignage automatique de l'écran en installant l'application "no_screen_off"
+3- j'ai donc démarré les expés sur 40 configurations pour cette nuit. 
+
+Je prévois dans la suite re-exécuter les configurations que nous avions fait manuellement avec le samsung.
+je dois générer manuellement le fichier input des configurations. 
+
+Bonne soirée Vlad. 
+
+	
+[1] energie consommée durant les test refaits avec les configurations "idle", 0-1 et 1-0 sur le samsung https://gitlab.liris.cnrs.fr/plwapet/power_tool_results/-/blob/main/samsung_galaxy_s8/Samsung_Gal_S8_energy_consumed_according_to_cpu_with_cc_info_variations.png
+	 
+	 
+	 
+  0 - finir le script ---
+ 1- décharger le téléphone ---
+ 2- implementer la prise en compte de la config dans le modèle
+ 3- classer les anciens resultat (summary_only*2 + dossier resultats)
+ 4- en copier pour la correction des summary files. 
+ 5 -enlever les summary_file only inutiles, et lancer les tests
+ 
+ 
+ 
+ Salut Vlad comme compte rendu d'aujourd'hui,
+ 1- Avant la réunion je continuais d'investiguer sur les erreurs liées à la mesure de l'énergie et à l'automatisation du script en général
+ 2- Après la réunions j'ai essayé de formaliser le calcul présenté en réunion, 
+    c'est à dire que 
+       Energie_du_powermeter_avec_cc_info_static = Energie_du_powermeter_avec_cc_info_variable - k * delta_cc_info
+	 => k = (Energie_du_powermeter_avec_cc_info_variable-Energie_du_powermeter_avec_cc_info_static)/delta_cc_info
+	 
+    En se basant sur les résultats issus des configurations idles, 1-0 et 0-1, 
+    je me suis rendu compte que la valeur de k n'est pas constant
+    
+    Déjà que dans un des cas,  on a à la fois
+     Energie_du_powermeter_avec_cc_info_variable > Energie_du_powermeter_avec_cc_info_static
+     mais  delta_cc_info négatif (cc_info a diminiué) ce qui paraît bizarre, 
+     
+    Je prévois faire les expés et ne pas considérer dans le modèle les expés où le cc_info a varié.
+    
+      
+ 3- J'ai aussi corrigé le bug qui bloquait l'exécution des expés lorsque la batterie était à 99%
+ 4- J'ai démarré les test de 40 expés pour demain. 
+ 
+ 
+ 
+ Salut Vlad comme compte rendu d'aujourd'hui. 
+ 1- les expés que j'ai démarré hier se sont dans l'ensemble bien déroulés. 
+ 2- Dans le code d'automatisation 
+	-C'est juste l'énergie du powermeter qui est considéré
+	- la colonne du cc_info a été rajoutée, pour que le modèle puisse la prendre en compte. 
+ 3- En générant les configurations à tester 
+      - si la configuration a été expérimentée et que le cc_info a varier, il est possible qu'elle soit retestée
+ 4- Le code du modèle ne considère pas le cc_info dont l'input a varié 
+ 5 - Enfin j'ai corrigé l'erreur des configurations au format générique 
+     qui était contenue dans les summary files du google pixel
+     et j'ai rajouté la colonne cc_info pour l'uniformisation des datas.
+     
+J'ai démarré 50 expés pour cette nuit, 
+et demain je prévois faire les expés clés du samsung 
+et commencer avec la recherche de la bonne valeur de R
+
+Bonne soirée Vlad
+     
+ 
+ 
+ Salut Vlad comme compte rendu d'aujourd'hui. 
+ Sur les 46 expés lancés vendredi soir, 23 se sont correctement exécutées
+ Le reste n'a pas pu s'exécuter à cause d'une mise à jour du système d'exploitation. 
+
+1 - Aujourd'hui j'ai donc continué avec les 23 configurations restantes, mais je n'ai pu exécuter que 12. 
+ J'ai rajouté les 11 restantes à une série de 35 autres aléatoirement générés. 
+Je compte lancer ce total de 46 expés pour cette nuit. 
+
+
+Sur les expés qui ont été effectué le R2 score est passé de -0.019 à 0.397
+
+2- Entre temps concernant le google pixel, j'ai essayé de voir quelles 
+sont les configurations pour lesquelle l'augmentation du nombre du Big cores
+réduisait l'efficacité. 
+
+Voici le fichier qui liste ces configurations [1]. 
+Voici quelques chiffres: 
+Sur les 131 configurations concernées
+pour la majeure partie (56) le niveau de fréquence des littles cores est élevé 
+39 where little cores are with level 1
+36 where little cores are with level 2
+56 where little cores are with level 3
+
+Le nombre de configurations où le big core est à 0 est aussi élevé
+46 cases where the big core is on level 3
+21 cases where the big core is on level 2
+5 cases where the big core is on level 1
+59 cases where big cores are on level 0
+
+On peut conclure que 
+Lorsqu'on allume le big core, on perd en efficacité. 
+Lorsque la fréquence du little core est élevée on perd aussi en efficacité. 
+
+
+
+
+
+Salut Vlad, comme compte rendu d'ajourd'hui, 
+1- avant la réunion, j'ai adapté le code du modèle au samsung afin qu'il permettre
+  a - l'analyse des données du samsung et 
+  b - la génération de ses graphes
+  
+2- Ensuite il y'a eu la réunion. 
+3- Après la réunion: 
+   a- j'ai continué avec l'extraction des lessons learned,
+     pour l'instant je continue de les extraire comme je l'ai faire avec le google pixel. 
+   b- J'ai aussi créé le fichier partagé des lessons learned, mais il n'est pas rempli.
+       Je prévois y récopier une partie des anciens résultats du google pixel.
+	 Je prévois continuer de le remplir avec les données du samsung.
+       je prévois aussi faire un mail dès que vous pourrez en prendre conaissance. 
+	 
+3- J'ai démarré 50 autres expés pour cette nuit. 
+Bonne soirée Vlad. 
+
+
+
+
+Salut Vlad, comme compte rendu d'aujourd'hui,
+  1- j'ai effectué sur le code du modèle les modifications dont j'ai parlé hier et qu'il restait à faire:
+	a/ la prise en compte du nouveau format de données avec la fréquence libre. 
+	b/ la générations des graphes et des tableaux pour l'analyses des marginal effects. 
+  2- En même temps j'esseyais de faire en sorte que le modèle atteigne un R2 score assez elevé. 
+      Avec les données que j'ai à ma disposition, même s'ils ne sont pas correctement équilibrées 
+	le R2 score a atteint la valeur de 0.82
+  3- J'ai généré les graphes ayant pour variable principale le fait que la fréquence du socket est laissée libre. 
+     (pour les trois sockets, j'ai donc générés trois groupes de données). Voici le dossier résultant [1]
+     A première vue, laisser la fréquence free et ne pas modifier le governor dégrade l'efficacité. 
+     Mais je prévois analyser les résultat de manière plus détaillée demain et la semaine prochaine. 
+  4- Il m'est aussi venu à l'esprit de retoucher les images d'hier afin de les rendre beaucoup plus lisibles 
+     et d'en rajouter d'autre images qui sont les résultats des images précédentes après que la variation aient été appliquées. 
+     toutes les images sont dans ce dossier [2] et terminent par after et before à chaque fois, précédé du nom du téléphone entre autre. 
+     
+  [1] Dossier généré pour l'analyse des marginal effects. https://gitlab.liris.cnrs.fr/plwapet/scripts_and_relevant_files/-/tree/main/kernel_ridge_linear_model/marginal_effect_exploration_automatic_experiments_google__0.82_base_Y_F_N_on_socket
+  [2] Dossier des images des lessons learned before and after. https://gitlab.liris.cnrs.fr/plwapet/scripts_and_relevant_files/-/tree/main/kernel_ridge_linear_model/images_resuming_lesson_learned
+  
+  
+  
+  Salut Vlad comme compte rendu d'aujourd'hui, 
+  1- Avant la réunion, j'ai essayé d'afficher les résultats des expés suspect. 
+  2- Il y'a eu la réunion
+  3 - Après la réunion: 
+	a- J'ai corrigé le bug que j'avais à l'affichage, j'utilisait le format de X avec le nombre de cores actifs et non l'état des cores. 
+	   Il fallait juste modifier un paramètre du script. Voici le graphe obtenu (higher is better) [1]
+	b- J'ai aussi généré les nouvelles configurations à tester. 
+  4 - Aussi Vlad, très important:  si les expés ne corroborent pas les résultat du modèle kernel ridge
+                                   Cela ne veut pas dire que ces résultats sont faux, 
+					     car le kernel ridge présente la moyenne de la relation entre deux variables sur TOUTES les configurations possibles. 
+					     Et non seulement lorsque les midiums et big cores sont off ou sont au mid, ou lorsque les autres cores little cores sont tous éteint ou tous allumés. 
+					     ces dernier cas ne représentent qu'un toutes petite partie parmis toutes les possibilités des autres variables. 
+		
+  5- J'ai tout de même démarré les expés avec les medium cores et les big cores à la fréquence moyenne. 
+
+  [1] configurations étranges testées entre les varibles séparées et les big et medium éteints. https://gitlab.liris.cnrs.fr/plwapet/scripts_and_relevant_files/-/blob/main/kernel_ridge_linear_model/kernel_ridge_prediction_on_google_pixel_4a_5g.png  
+
+
+
+Latex home /home/patrick/texmf
+cls files folder: /home/patrick/texmf/tex/latex/commonstuff/
+bst files folder:  /home/patrick/texmf/bibtex/bst/
+action done: creation of this directories structures
+             making : texhash /home/patrick/texmf
+		 adding acmart.cls and ACM-Reference-Format.bst in corresponding above folders. 
+Thils link helped me to use tlmgr because I had an error with checksum -5
+
+
+Finally I purge texlive from computer and reinstalled it using 
+https://tex.stackexchange.com/questions/1092/how-to-install-vanilla-texlive-on-debian-or-ubuntu
+This command help me to fix the fakeroot error 
+ sudo update-alternatives --set fakeroot /usr/bin/fakeroot-tcp
+from this link https://github.com/microsoft/WSL/issues/4067
+  I added tlmgr path in the visudo file. 
+      with command sudo visudo 
+          
+
+Salut Vlad, comme compte rendu d'aujourd'hui
+j'ai commencé à écrire la publi au format acm. 
+J'ai eu quelque soucis avec la compilation (latex, acm et compatibilités entre librairies). 
+Mais c'est en cours de résolution.
+
+En attendant j'ai réfléchi au task graph sheduling. 
+Pas besoin de faire des noeud compliqués. 
+Car il est destiné au scheduler. 
+Donc avant de faire le schedule() il a juste besoin de savoir quel est l'état du système
+et avec le lesson_learned_as_decision_tree il calcule un score 
+Puis en fonction de ce score il décide s'il schedule() ou pas. 
+J'ai concu la fonction qui produit les lesson_learned_as_decision_tree
+Je prévois l'implémenter lundi, après avoir fini le template.
+ 
+Au plan j'ai rajouté les contributions.
+Tes commentaires me semblent pertinents, 
+je prévois les intégrer dans la version traduite en anglais.
+
+Bonne soirée Vlad.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Salut Vlad, désolé pour la latence. 
+Comme compte rendu d'aujourd'hui. 
+J'ai principalement corrigé le bug de compilation latex.  
+J'ai commencé à remplir le papier (par l'introduction).
+Je prévois continuer de remplir et de traduire [1]. 
+J'ai aussi pris en compte tes remarques, surligné en violet et souligné dans la version google doc.
+Enfin j'ai aussi ajouté entre autre choses la partie LIMITATIONS dans la version google doc.
+ 
+[1] Lien vers la version latex du papier. https://gitlab.liris.cnrs.fr/plwapet/scripts_and_relevant_files/-/tree/main/publication_in_acm_format/fitsAll
+
+
+
+
+
+Energy efficiency
+Long running process
+Scheduiling
+Machine learning
+kernel ridge model
+Mobile  Information Systems    https://dl.acm.org/doi/10.1145/1621995.1621999
+
+Nouveau titre: extraction des interactions entre les paramètre de l'efficacité energétique pour un scheduling sobre des long running task
+
+Papier du meme theme
+https://dl.acm.org/doi/10.1145/3030207.3030224
+
+
+
+Salut Vlad comme compte rendu d'aujourd'hui: 
+
+J'ai publié le code latex du papier sur le github.
+Voici le lien: https://github.com/lwapet/fitsAll.git
+Vous êtes sensé recevoir l'invitation. 
+
+Pour l'instant je remplis le papier pas à pas. 
+J'ai modifié le titre et je prévois continuer avec mot clés suivants.  
+Energy efficiency
+Long running process
+Scheduiling
+Machine learning
+kernel ridge model
+Mobile Information Systems
+
+Un outil d'acm [1] permet de reférencer les mots clés par leur code international. 
+C'est peut-être de cet outil que Son parlait.
+Je l'ai pris en main et j'ai commencé à générer leur code mots clés. 
+
+[1] Outil d'ACM de génération de mot clés. https://www.acm.org/binaries/content/assets/publications/article-templates/ccs-howto-v6-12jan2015.pdf
+
+
+à lire https://dl.acm.org/doi/10.1145/3030207.3030224
+
+
+
+Information systems
+High Relevance
+
+    Information systems applications
+    
+    
+    
+    
+
+Salut Vlad, comme compte rendu d'aujourd'hui,
+j'ai principalement continué de travailler sur le papier: 
+  - j'ai indexé les mots clés
+  - j'ai rajouté dans le README les commandes de compilation. 
+  - J'ai mis au propre les 4 premiers points de l'introduction 
+       en ajoutant aussi les références bibliographiques. 
+   Et je prévois continuer demain. 
+Bonne soirée Vlad
+  
+
+
+
+
+
+
+
+
+# NOTE ABOUT TASK GROUP: the "cpu" subsystem is designed to handle some personnalizable behaviors in the scheduler. 
+#  it is already defined in the linux code and its corresponding root folder exist in the userspace.
+# This folder contains parameter files of other subsystem automatically created at system startup 
+# its then contains a cgroup hierarchy wich its the parent folder
+# we just create another folder in that herarchy associated whith the Mengh Zhu folder.
+# We also modified the systems handler associated to the "cpu" subsystem, to handle the creation of the meng zhu cgroup,
+# and in the same handlers we set the task group id associated with the cgroup created and that will be used by the scheduler. 
+
+

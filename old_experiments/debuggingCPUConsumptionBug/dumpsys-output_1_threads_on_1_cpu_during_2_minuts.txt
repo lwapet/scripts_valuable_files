@@ -1,0 +1,182 @@
+31janv.22_13_52
+Statistics since last charge:
+  System starts: 0, currently on battery: false
+  Estimated battery capacity: 3000 mAh
+  Min learned battery capacity: 3000 mAh
+  Max learned battery capacity: 3000 mAh
+  Time on battery: 2m 30s 809ms (72.8%) realtime, 2m 30s 809ms (100.0%) uptime
+  Time on battery screen off: 0ms (0.0%) realtime, 0ms (0.0%) uptime
+  Time on battery screen doze: 0ms (0.0%)
+  Total run time: 3m 27s 268ms realtime, 3m 27s 268ms uptime
+  Charge time remaining: 34m 17s 0ms 
+  Discharge: 11.9 mAh
+  Screen off discharge: 0 mAh
+  Screen doze discharge: 0 mAh
+  Screen on discharge: 11.9 mAh
+  Device light doze discharge: 0 mAh
+  Device deep doze discharge: 0 mAh
+  Start clock time: 2022-01-31-13-48-49
+  Screen on: 2m 30s 809ms (100.0%) 0x, Interactive: 2m 30s 809ms (100.0%)
+  Screen brightnesses:
+    medium 2m 30s 809ms (100.0%)
+  Total full wakelock time: 2m 30s 707ms
+  Total WiFi Multicast wakelock Count: 0
+  Total WiFi Multicast wakelock time: 2m 30s 809ms
+
+  CONNECTIVITY POWER SUMMARY START
+  Logging duration for connectivity statistics: 2m 30s 809ms 
+  Cellular Statistics:
+     Cellular kernel active time: 0ms (0.0%)
+     Cellular data received: 0B
+     Cellular data sent: 0B
+     Cellular packets received: 0
+     Cellular packets sent: 0
+     Cellular Radio Access Technology: (no activity)
+     Cellular Rx signal strength (RSRP):
+       great (greater than -98dBm):  2m 30s 809ms (100.0%) 
+     Cellular Sleep time:  3m 25s 900ms (136.5%)
+     Cellular Idle time:   3s 395ms (2.3%)
+     Cellular Rx time:     5s 202ms (3.4%)
+     Cellular Tx time:     
+       less than 0dBm:  297ms (0.2%)
+       0dBm to 8dBm:  0ms (0.0%)
+       8dBm to 15dBm:  0ms (0.0%)
+       15dBm to 20dBm:  0ms (0.0%)
+       above 20dBm:  0ms (0.0%)
+  Wifi Statistics:
+     Wifi kernel active time: 2m 30s 809ms (100.0%)
+     Wifi data received: 26.79KB
+     Wifi data sent: 12.18KB
+     Wifi packets received: 84
+     Wifi packets sent: 89
+     Wifi states:
+       sta 2m 30s 809ms (100.0%) 
+     Wifi supplicant states:
+       completed 2m 30s 809ms (100.0%) 
+     Wifi Rx signal strength (RSSI):
+         great (greater than -55dBm): 2m 30s 809ms (100.0%) 
+     WiFi Scan time:  0ms (0.0%)
+     WiFi Sleep time:  1m 53s 783ms (75.4%)
+     WiFi Idle time:   29s 920ms (19.8%)
+     WiFi Rx time:     7s 33ms (4.7%)
+     WiFi Tx time:     73ms (0.0%)
+     WiFi Battery drain: 0.141mAh
+  GPS Statistics:
+     GPS signal quality (Top 4 Average CN0):
+      poor (less than 20 dBHz): 0ms (0.0%) 
+      good (greater than 20 dBHz): 0ms (0.0%) 
+  CONNECTIVITY POWER SUMMARY END
+
+  Bluetooth total received: 0B, sent: 0B
+  Bluetooth scan time: 2m 30s 809ms 
+     Bluetooth Idle time:   0ms (0.0%)
+     Bluetooth Rx time:     0ms (0.0%)
+     Bluetooth Tx time:     0ms (0.0%)
+
+  Device battery use since last full charge
+    Amount discharged (lower bound): 0
+    Amount discharged (upper bound): 0
+    Amount discharged while screen on: 0
+    Amount discharged permil while screen on: 3
+    Amount discharged while screen off: 0
+    Amount discharged permil while screen off: 0
+    Amount discharged while screen doze: 0
+
+  Estimated power use (mAh):
+    Capacity: 3000, Typical: 0, Computed drain: 15.3, actual drain: 0
+    Screen: 8.23 Excluded from smearing
+    Uid u0a231: 4.73 ( cpu=4.73 ) Including smearing: 5.03 ( proportional=0.294 )
+    Idle: 1.01 Excluded from smearing
+    Uid 1000: 0.387 ( cpu=0.355 sensor=0.0314 ) Excluded from smearing
+    Cell standby: 0.327 ( radio=0.327 ) Excluded from smearing
+    Uid u0a62: 0.264 ( cpu=0.235 wifi=0.0294 ) Including smearing: 0.281 ( proportional=0.0164 )
+    Uid u0a38: 0.126 ( cpu=0.0398 wifi=0.0857 ) Including smearing: 0.133 ( proportional=0.00780 )
+    Uid 0: 0.105 ( cpu=0.105 ) Excluded from smearing
+    Uid u0a8: 0.0357 ( cpu=0.0357 ) Excluded from smearing
+    Uid u0a106: 0.0245 ( cpu=0.00821 wifi=0.0163 ) Including smearing: 0.0260 ( proportional=0.00152 )
+    Uid 1001: 0.0187 ( cpu=0.0187 ) Excluded from smearing
+    Wifi: 0.0185 ( cpu=0.00992 wifi=0.00857 ) Including smearing: 0.0196 ( proportional=0.00115 )
+    Uid 1036: 0.0131 ( cpu=0.0131 ) Excluded from smearing
+    Bluetooth: 0.00887 ( cpu=0.00887 ) Including smearing: 0.00942 ( proportional=0.000551 )
+    Uid u0a12: 0.00342 ( cpu=0.00342 ) Including smearing: 0.00363 ( proportional=0.000212 )
+    Uid 1021: 0.00222 ( cpu=0.00222 ) Excluded from smearing
+    Uid 1017: 0.00218 ( cpu=0.00218 ) Excluded from smearing
+    Uid u0a69: 0.00132 ( cpu=0.00132 ) Including smearing: 0.00140 ( proportional=0.0000820 )
+    Uid 5018: 0.00126 ( cpu=0.00126 ) Excluded from smearing
+    Uid u0a22: 0.00115 ( cpu=0.00115 ) Excluded from smearing
+    Uid 1041: 0.000793 ( cpu=0.000793 ) Excluded from smearing
+    Uid 1066: 0.000763 ( cpu=0.000763 ) Excluded from smearing
+    Uid 1051: 0.000722 ( wifi=0.000722 ) Excluded from smearing
+    Uid u0a75: 0.000502 ( cpu=0.000502 ) Including smearing: 0.000534 ( proportional=0.0000312 )
+    Uid u0a15: 0.000459 ( cpu=0.000459 ) Including smearing: 0.000487 ( proportional=0.0000285 )
+    Uid u0a159: 0.000205 ( cpu=0.000205 ) Including smearing: 0.000217 ( proportional=0.0000127 )
+    Uid u0a100: 0.000164 ( cpu=0.000164 ) Including smearing: 0.000174 ( proportional=0.0000102 )
+    Uid 1027: 0.0000992 ( cpu=0.0000992 ) Excluded from smearing
+    Uid 1058: 0.0000992 ( cpu=0.0000992 ) Excluded from smearing
+    Uid 5012: 0.0000992 ( cpu=0.0000992 ) Excluded from smearing
+    Uid 5009: 0.0000616 ( cpu=0.0000616 ) Excluded from smearing
+
+  1000:
+    User activity: 1 other
+    Wake lock *alarm* realtime
+    Wake lock *launch* realtime
+    Wake lock *telephony-radio* realtime
+    Sensor 15: 2m 30s 798ms realtime (0 times)
+    Foreground for: 2m 30s 799ms 
+    Total running: 2m 30s 799ms 
+    Total cpu time: u=8s 208ms s=6s 972ms 
+    Proc android.hardware.memtrack@1.0-service:
+      CPU: 0ms usr + 20ms krn ; 0ms fg
+    Proc com.sec.epdg:
+      CPU: 10ms usr + 10ms krn ; 0ms fg
+    Proc com.samsung.android.sm.provider:
+      CPU: 10ms usr + 20ms krn ; 0ms fg
+    Proc servicemanager:
+      CPU: 40ms usr + 80ms krn ; 0ms fg
+    Proc com.sec.android.sdhms:
+      CPU: 400ms usr + 220ms krn ; 0ms fg
+    Proc com.samsung.android.lool:
+      CPU: 90ms usr + 20ms krn ; 0ms fg
+    Proc android.hardware.keymaster@3.0-service:
+      CPU: 80ms usr + 20ms krn ; 0ms fg
+    Proc com.samsung.android.dqagent:
+      CPU: 30ms usr + 10ms krn ; 0ms fg
+    Proc android.hardware.graphics.composer@2.1-service:
+      CPU: 130ms usr + 610ms krn ; 0ms fg
+    Proc freecessmonitor:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Proc iod:
+      CPU: 10ms usr + 40ms krn ; 0ms fg
+    Proc com.sec.imsservice:
+      CPU: 130ms usr + 30ms krn ; 0ms fg
+    Proc system:
+      CPU: 2s 740ms usr + 2s 70ms krn ; 0ms fg
+    Proc android.hardware.sensors@1.0-service:
+      CPU: 20ms usr + 60ms krn ; 0ms fg
+    Proc argosd:
+      CPU: 80ms usr + 100ms krn ; 0ms fg
+    Proc android.hardware.health@2.0-service.samsung:
+      CPU: 0ms usr + 10ms krn ; 0ms fg
+    Apk com.samsung.android.MtpApplication:
+      Service com.samsung.android.MtpApplication.MtpService:
+        Created for: 0ms uptime
+        Starts: 1, launches: 1
+  u0a231:
+    Wake lock *launch* realtime
+    Wake lock WindowManager: 2m 30s 707ms full (0 times) (running) realtime
+    TOTAL wake: 2m 30s 707ms full realtime
+    Foreground activities: 2m 30s 708ms realtime (0 times) (running)
+    Top for: 2m 30s 708ms 
+    Total running: 2m 30s 708ms 
+    Total cpu time: u=3m 5s 388ms s=1s 404ms 
+    Proc com.opportunistask.scheduling.benchmarking_app_to_test_big_cores:
+      CPU: 2m 16s 990ms usr + 1s 60ms krn ; 0ms fg
+
+Total cpu time reads: 1
+Batched cpu time reads: 0
+Batching Duration (min): 12
+All UID cpu time reads since the later of device start or stats reset: 32
+UIDs removed since the later of device start or stats reset: 1
+KernelUidCpuTimeReader Exception :
+
+

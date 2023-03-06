@@ -1,0 +1,118 @@
+
+
+CPU intensive and interactive  on little socket - Samsung
+First result when limiting frequency to 1248000 (frequency range: 1690000 1456000 1248000 1053000 949000 832000 715000 598000 455000  )
+(1_Inter_1BE_mid - 0)   interactive task is on cpu 3
+
+interactive sleep time 1000 et pause = 600 ms
+
+rking thread : doing a pause of 900
+03-11 14:04:23.914 18122 18233 V Benchmark_thread: The benchmarking thread : PRINTING RESULTS
+03-11 14:04:24.238 18122 18233 V Benchmark_thread: The benchmarking thread : output :  Thread: 0 - Duration: 300006 seconds; 
+03-11 14:04:24.238 18122 18233 V Benchmark_thread:  - Real workload: 5.7567075930448494E10 - Integer reached: 102148; - Number of reset = 0;  
+03-11 14:04:24.238 18122 18233 V Benchmark_thread:  Battery stats:     Uid u0a247: 6.39 ( cpu=6.39 ) Including smearing: 7.05 ( proportional=0.666 ) mAH 
+03-11 14:04:24.238 18122 18233 V Benchmark_thread:  Computed Drain: 28.0
+03-11 14:04:24.238 18122 18233 V Benchmark_thread:  Start: 100 % - End : 100 % 
+03-11 14:04:24.238 18122 18233 V Benchmark_thread: 
+03-11 14:04:24.238 18122 18233 V Benchmark_thread:  temperatures = [30000.0, 30000.0, 30000.0, 30000.0, 30000.0, 30000.0, 30000.0, 30000.0, 30000.0, 30000.0]
+03-11 14:04:24.238 18122 18233 V Benchmark_thread:  frequency_output_string =[1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0][1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0][1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0][1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0,1248000.0][741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0][741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0][741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0][741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0]
+03-11 14:04:24.716 17707 17793 V Interactive_Benchmark_thread: The benchmarking thread : current time stamp 1647003864716
+03-11 14:04:24.716 17707 17793 V Interactive_Benchmark_thread: The benchmarking thread : doing a pause of 900
+03-11 14:04:25.721 17707 17793 V Interactive_Benchmark_thread: The benchmarking thread : current time stamp 1647003865721
+03-11 14:04:25.721 17707 17793 V Interactive_Benchmark_thread: The benchmarking thread : doing a pa
+
+
+
+
+
+
+
+
+
+First result when limiting frequency of big core to  1469000 (frequency range : 2314000 2158000 2002000 1937000 1807000 1703000 1469000 1261000 1170000 1066000 962000 858000 741000  )
+(1_Inter - 1_BE_mid_freq)   interactive task is on cpu 3
+   BEff is on cpu 7  (code 80)
+
+03-11 14:24:44.576 21690 21794 V Interactive_Benchmark_thread: The benchmarking thread : doing a pause of 900
+03-11 14:24:44.821 22285 22365 V Benchmark_thread: The benchmarking thread : PRINTING RESULTS
+03-11 14:24:45.105 22285 22365 V Benchmark_thread: The benchmarking thread : output :  Thread: 0 - Duration: 300003 seconds; 
+03-11 14:24:45.105 22285 22365 V Benchmark_thread:  - Real workload: 1.4182487819508466E11 - Integer reached: 157285; - Number of reset = 0;  
+03-11 14:24:45.105 22285 22365 V Benchmark_thread:  Battery stats:     Uid u0a249: 12.0 ( cpu=12.0 ) Including smearing: 13.3 ( proportional=1.32 ) mAH 
+03-11 14:24:45.105 22285 22365 V Benchmark_thread:  Computed Drain: 36.8
+03-11 14:24:45.105 22285 22365 V Benchmark_thread:  Start: 100 % - End : 100 % 
+03-11 14:24:45.105 22285 22365 V Benchmark_thread: 
+03-11 14:24:45.105 22285 22365 V Benchmark_thread:  temperatures = [36000.0, 36000.0, 36000.0, 36000.0, 36000.0, 36000.0, 36000.0, 36000.0, 36000.0, 36000.0]
+03-11 14:24:45.105 22285 22365 V Benchmark_thread:  frequency_output_string =[1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,455000.0][1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,455000.0][1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,455000.0][1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,455000.0][1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0][1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0][1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0][1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0,1469000.0]
+03-11 14:24:45.584 21690 21794 V Interactive_Benchmark_thread: The benchmarking thread : current time stamp 1647005085583
+03-11 14:24:45.585 21690 21794 V Interactive_Benchmark_thread: The benchmarking thread : doing a pause of 900
+03-11 14:24:46.586 21690 21794 V Interactive_Benchmark_thread: The benchmarking thread : current time stamp 1647005086586
+
+
+
+1_Inter_1BE
+Soit on la met sur le little core sans toucher à la fréquence du little (1_Inter_1BE - 0)
+ead : doing a pause of 900
+03-11 14:41:38.456 25040 25147 V Interactive_Benchmark_thread: The benchmarking thread : current time stamp 1647006098456
+03-11 14:41:38.456 25040 25147 V Interactive_Benchmark_thread: The benchmarking thread : doing a pause of 900
+03-11 14:41:39.280 25346 25398 V Benchmark_thread: The benchmarking thread : PRINTING RESULTS
+03-11 14:41:39.462 25040 25147 V Interactive_Benchmark_thread: The benchmarking thread :----------------- 30 seconds passedthread id = 0
+03-11 14:41:39.462 25040 25147 V Interactive_Benchmark_thread: The benchmarking thread : getting cpu frequencies and temperature 13 times
+03-11 14:41:39.617 25346 25398 V Benchmark_thread: The benchmarking thread : output :  Thread: 0 - Duration: 300004 seconds; 
+03-11 14:41:39.617 25346 25398 V Benchmark_thread:  - Real workload: 7.113637301262816E10 - Integer reached: 113033; - Number of reset = 0;  
+03-11 14:41:39.617 25346 25398 V Benchmark_thread:  Battery stats:     Uid u0a251: 8.74 ( cpu=8.74 ) Including smearing: 9.69 ( proportional=0.953 ) mAH 
+03-11 14:41:39.617 25346 25398 V Benchmark_thread:  Computed Drain: 30.8
+03-11 14:41:39.617 25346 25398 V Benchmark_thread:  Start: 100 % - End : 100 % 
+03-11 14:41:39.617 25346 25398 V Benchmark_thread: 
+03-11 14:41:39.617 25346 25398 V Benchmark_thread:  temperatures = [34000.0, 34000.0, 34000.0, 34000.0, 34000.0, 34000.0, 34000.0, 34000.0, 34000.0, 34000.0]
+03-11 14:41:39.617 25346 25398 V Benchmark_thread:  frequency_output_string =[1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0][1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0][1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0][1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0,1690000.0][741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0][741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0][741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0][741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0,741000.0]
+03-11 14:41:41.377 25040 25147 V Interactive_Benchmark_thread: The benchmarking thread : current temperature = 33000.0
+03-11 14:41:41.380 25040 25147 V Interactive_Benchmark_thread: The benchmarking thread : current time stamp 1647006099462
+03-11 14:41:41.381 25040 25147 V Interactive_Benchmark_thread: The benchmarking thread : doing a pause of 900
+03-11 14:41:42.450 25040 25147 V Interactive_Benchmark_thread: The benchmarking thread : current time stamp 1647006102450
+03-11 14:41:42.450 25040 25147 V Interactive_Benchmark_thread: The benchmarking thread : doing a pause of 900
+
+
+1_Inter - 1_BE
+Soit on la met sur le big core on laisse le big core sans toucher à la fréquence du big core  (1_Inter - 1_BE)
+.402 27869 27952 V Interactive_Benchmark_thread: The benchmarking thread : doing a pause of 900
+03-11 14:54:23.401 27869 27952 V Interactive_Benchmark_thread: The benchmarking thread : current time stamp 1647006863401
+03-11 14:54:23.401 27869 27952 V Interactive_Benchmark_thread: The benchmarking thread : doing a pause of 900
+03-11 14:54:24.074 28411 28490 V Benchmark_thread: The benchmarking thread : PRINTING RESULTS
+03-11 14:54:24.345 28411 28490 V Benchmark_thread: The benchmarking thread : output :  Thread: 0 - Duration: 300002 seconds; 
+03-11 14:54:24.345 28411 28490 V Benchmark_thread:  - Real workload: 2.3070579030573553E11 - Integer reached: 198595; - Number of reset = 0;  
+03-11 14:54:24.345 28411 28490 V Benchmark_thread:  Battery stats:     Uid u0a253: 30.9 ( cpu=30.9 ) Including smearing: 34.8 ( proportional=3.90 ) mAH 
+03-11 14:54:24.345 28411 28490 V Benchmark_thread:  Computed Drain: 67.1
+03-11 14:54:24.345 28411 28490 V Benchmark_thread:  Start: 100 % - End : 99 % 
+03-11 14:54:24.345 28411 28490 V Benchmark_thread: 
+03-11 14:54:24.345 28411 28490 V Benchmark_thread:  temperatures = [44000.0, 44000.0, 44000.0, 44000.0, 44000.0, 44000.0, 44000.0, 44000.0, 44000.0, 44000.0]
+03-11 14:54:24.345 28411 28490 V Benchmark_thread:  frequency_output_string =[1248000.0,455000.0,455000.0,455000.0,598000.0,598000.0,1690000.0,455000.0,455000.0,598000.0][1690000.0,455000.0,455000.0,455000.0,598000.0,598000.0,1690000.0,455000.0,455000.0,598000.0][1690000.0,455000.0,455000.0,455000.0,455000.0,598000.0,1690000.0,455000.0,455000.0,598000.0][1053000.0,455000.0,455000.0,455000.0,455000.0,598000.0,1690000.0,455000.0,455000.0,598000.0][1469000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0][1469000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0][1703000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0][1937000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0,2314000.0]
+03-11 14:54:24.401 27869 27952 V Interactive_Benchmark_thread: The benchmarking thread : current time stamp 1647006864401
+03-11 14:54:24.401 27869 27952 V Interactive_Benchmark_thread: The benchmarking thread : doing a pause of 900
+03-11 14:54:27.402 27869 27952 V Interactive_Benchmark_thread: The benchmarking thread : current time stamp 1647006867401
+03-11 14:54:27.402 27869 27952 V Interactive_Benchmark_thread: The benchmarking thread : doing a pause of 900
+03-11 14:54:28.402 27869 27952 V Interactive_Benchmark_thread: The ben
+
+
+
+
+
+
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
